@@ -15,8 +15,9 @@ public class MenuItem {
     private String description;
     private BigDecimal price;
 
-    @Enumerated(EnumType.STRING)
-    private MenuCategory category;
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
 
     private boolean available = true;
 
@@ -26,7 +27,7 @@ public class MenuItem {
 
     protected MenuItem() {}
 
-    public MenuItem(String name, String description, BigDecimal price, MenuCategory category) {
+    public MenuItem(String name, String description, BigDecimal price, Category category) {
         this.name = name;
         this.description = description;
         this.price = price;
@@ -37,7 +38,7 @@ public class MenuItem {
     public String getName() { return name; }
     public String getDescription() { return description; }
     public BigDecimal getPrice() { return price; }
-    public MenuCategory getCategory() { return category; }
+    public Category getCategory() { return category; }
     public boolean isAvailable() { return available; }
     public boolean isVegetarian() { return vegetarian; }
     public boolean isSpicy() { return spicy; }
@@ -46,7 +47,7 @@ public class MenuItem {
     public void setName(String name) { this.name = name; }
     public void setDescription(String description) { this.description = description; }
     public void setPrice(BigDecimal price) { this.price = price; }
-    public void setCategory(MenuCategory category) { this.category = category; }
+    public void setCategory(Category category) { this.category = category; }
     public void setAvailable(boolean available) { this.available = available; }
     public void setVegetarian(boolean vegetarian) { this.vegetarian = vegetarian; }
     public void setSpicy(boolean spicy) { this.spicy = spicy; }

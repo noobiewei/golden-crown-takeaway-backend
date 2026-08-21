@@ -1,0 +1,12 @@
+name,description,price,category,vegetarian,spicy,containsNuts
+Spring Rolls,"Crispy vegetable spring rolls, 4 pieces",4.50,Starters,true,false,false
+Prawn Toast,"Sesame prawn toast, 4 pieces",5.20,Starters,false,false,false
+Hot & Sour Soup,Classic Sichuan-style hot and sour soup,3.80,Soups,false,true,false
+Kung Po Chicken,"Diced chicken with peanuts, chilli and spring onion",8.90,Main Courses,false,true,true
+Sweet & Sour Pork,Battered pork with pineapple in sweet and sour sauce,8.50,Main Courses,false,false,false
+Beef in Black Bean Sauce,Sliced beef with peppers and onion in black bean sauce,9.20,Main Courses,false,false,false
+Egg Fried Rice,Wok-fried rice with egg and spring onion,3.50,Rice,true,false,false
+Special Fried Rice,"Egg fried rice with prawn, chicken and char siu",4.80,Rice,false,false,false
+Singapore Noodles,"Curry-flavoured rice noodles with prawn, char siu and vegetables",7.90,Noodles,false,true,false
+Prawn Crackers,Portion of prawn crackers,2.00,Sides,false,false,false
+Coca-Cola Can,330ml,1.20,Drinks,true,false,false
