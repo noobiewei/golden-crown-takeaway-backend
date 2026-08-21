@@ -20,6 +20,10 @@ public class MenuItem {
 
     private boolean available = true;
 
+    private boolean vegetarian = false;
+    private boolean spicy = false;
+    private boolean containsNuts = false;
+
     protected MenuItem() {}
 
     public MenuItem(String name, String description, BigDecimal price, MenuCategory category) {
@@ -35,10 +39,16 @@ public class MenuItem {
     public BigDecimal getPrice() { return price; }
     public MenuCategory getCategory() { return category; }
     public boolean isAvailable() { return available; }
+    public boolean isVegetarian() { return vegetarian; }
+    public boolean isSpicy() { return spicy; }
+    public boolean isContainsNuts() { return containsNuts; }
 
     public void setName(String name) { this.name = name; }
     public void setDescription(String description) { this.description = description; }
     public void setPrice(BigDecimal price) { this.price = price; }
     public void setCategory(MenuCategory category) { this.category = category; }
     public void setAvailable(boolean available) { this.available = available; }
+    public void setVegetarian(boolean vegetarian) { this.vegetarian = vegetarian; }
+    public void setSpicy(boolean spicy) { this.spicy = spicy; }
+    public void setContainsNuts(boolean containsNuts) { this.containsNuts = containsNuts; }
 }
