@@ -46,7 +46,8 @@ public class OrderController {
                 request.customerPhone(),
                 request.orderType(),
                 request.deliveryAddress(),
-                request.deliveryPostcode()
+                request.deliveryPostcode(),
+                request.specialInstructions()
         );
 
         BigDecimal subtotal = BigDecimal.ZERO;
@@ -54,7 +55,7 @@ public class OrderController {
             MenuItem menuItem = menuItemRepository.findById(line.menuItemId())
                     .orElseThrow(() -> new IllegalArgumentException("Menu item not found: " + line.menuItemId()));
 
-            order.addItem(new OrderItem(menuItem, line.quantity()));
+            order.addItem(new OrderItem(menuItem, line.quantity(), line.note()));
             subtotal = subtotal.add(menuItem.getPrice().multiply(BigDecimal.valueOf(line.quantity())));
         }
 

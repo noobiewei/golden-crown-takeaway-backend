@@ -23,6 +23,9 @@ public class Order {
     private String deliveryAddress;
     private String deliveryPostcode;
 
+    @Column(length = 1000)
+    private String specialInstructions;
+
     private BigDecimal deliveryFee = BigDecimal.ZERO;
 
     @Enumerated(EnumType.STRING)
@@ -37,12 +40,13 @@ public class Order {
 
     protected Order() {}
 
-    public Order(String customerName, String customerPhone, OrderType orderType, String deliveryAddress, String deliveryPostcode) {
+    public Order(String customerName, String customerPhone, OrderType orderType, String deliveryAddress, String deliveryPostcode, String specialInstructions) {
         this.customerName = customerName;
         this.customerPhone = customerPhone;
         this.orderType = orderType;
         this.deliveryAddress = deliveryAddress;
         this.deliveryPostcode = deliveryPostcode;
+        this.specialInstructions = specialInstructions;
     }
 
     public void addItem(OrderItem item) {
@@ -56,6 +60,7 @@ public class Order {
     public OrderType getOrderType() { return orderType; }
     public String getDeliveryAddress() { return deliveryAddress; }
     public String getDeliveryPostcode() { return deliveryPostcode; }
+    public String getSpecialInstructions() { return specialInstructions; }
     public BigDecimal getDeliveryFee() { return deliveryFee; }
     public OrderStatus getStatus() { return status; }
     public LocalDateTime getCreatedAt() { return createdAt; }

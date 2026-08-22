@@ -8,5 +8,6 @@ public record CreateOrderRequest(
         OrderType orderType,
         String deliveryAddress,
         String deliveryPostcode,
+        String specialInstructions,
         List<OrderLineRequest> items
 ) {}
