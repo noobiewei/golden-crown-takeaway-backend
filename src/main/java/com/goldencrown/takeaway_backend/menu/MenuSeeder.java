@@ -64,6 +64,11 @@ public class MenuSeeder implements CommandLineRunner {
                 item.setSpicy(Boolean.parseBoolean(record.get("spicy")));
                 item.setContainsNuts(Boolean.parseBoolean(record.get("containsNuts")));
 
+                String imageUrl = record.get("imageUrl");
+                if (imageUrl != null && !imageUrl.isBlank()) {
+                    item.setImageUrl(imageUrl);
+                }
+
                 menuItemRepository.save(item);
             }
         }

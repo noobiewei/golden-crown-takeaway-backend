@@ -25,6 +25,8 @@ public class MenuItem {
     private boolean spicy = false;
     private boolean containsNuts = false;
 
+    private String imageUrl;
+
     protected MenuItem() {}
 
     public MenuItem(String name, String description, BigDecimal price, Category category) {
@@ -43,7 +45,9 @@ public class MenuItem {
     public boolean isVegetarian() { return vegetarian; }
     public boolean isSpicy() { return spicy; }
     public boolean isContainsNuts() { return containsNuts; }
+    public String getImageUrl() { return imageUrl; }
 
+    public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
     public void setName(String name) { this.name = name; }
     public void setDescription(String description) { this.description = description; }
     public void setPrice(BigDecimal price) { this.price = price; }
