@@ -13,6 +13,8 @@ import java.math.BigDecimal;
 @RequestMapping("/api/orders")
 public class OrderController {
 
+    private static final BigDecimal MINIMUM_DELIVERY_ORDER = new BigDecimal("15");
+
     private final OrderRepository orderRepository;
     private final MenuItemRepository menuItemRepository;
 
@@ -40,6 +42,11 @@ public class OrderController {
             subtotal = subtotal.add(menuItem.getPrice().multiply(BigDecimal.valueOf(line.quantity())));
         }
 
+        if (request.orderType() == OrderType.DELIVERY && subtotal.compareTo(MINIMUM_DELIVERY_ORDER) < 0) {
+            throw new IllegalArgumentException(
+                    "Minimum order for delivery is £" + MINIMUM_DELIVERY_ORDER + " (subtotal was £" + subtotal + ")");
+        }
+
         BigDecimal deliveryFee = calculateDeliveryFee(request.orderType(), request.deliveryZone(), subtotal);
         order.setDeliveryFee(deliveryFee);
         order.setTotalPrice(subtotal.add(deliveryFee));
@@ -58,7 +65,7 @@ public class OrderController {
             return new BigDecimal("3.00");
         }
         // WITHIN_3_MILES: cheaper rate once the order is big enough to be worth the trip
-        return subtotal.compareTo(new BigDecimal("15")) >= 0
+        return subtotal.compareTo(MINIMUM_DELIVERY_ORDER) >= 0
                 ? new BigDecimal("1.30")
                 : new BigDecimal("2.00");
     }
