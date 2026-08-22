@@ -23,6 +23,11 @@ public class Order {
     private String deliveryAddress;
 
     @Enumerated(EnumType.STRING)
+    private DeliveryZone deliveryZone;
+
+    private BigDecimal deliveryFee = BigDecimal.ZERO;
+
+    @Enumerated(EnumType.STRING)
     private OrderStatus status = OrderStatus.PENDING;
 
     private LocalDateTime createdAt = LocalDateTime.now();
@@ -34,11 +39,12 @@ public class Order {
 
     protected Order() {}
 
-    public Order(String customerName, String customerPhone, OrderType orderType, String deliveryAddress) {
+    public Order(String customerName, String customerPhone, OrderType orderType, String deliveryAddress, DeliveryZone deliveryZone) {
         this.customerName = customerName;
         this.customerPhone = customerPhone;
         this.orderType = orderType;
         this.deliveryAddress = deliveryAddress;
+        this.deliveryZone = deliveryZone;
     }
 
     public void addItem(OrderItem item) {
@@ -51,11 +57,14 @@ public class Order {
     public String getCustomerPhone() { return customerPhone; }
     public OrderType getOrderType() { return orderType; }
     public String getDeliveryAddress() { return deliveryAddress; }
+    public DeliveryZone getDeliveryZone() { return deliveryZone; }
+    public BigDecimal getDeliveryFee() { return deliveryFee; }
     public OrderStatus getStatus() { return status; }
     public LocalDateTime getCreatedAt() { return createdAt; }
     public BigDecimal getTotalPrice() { return totalPrice; }
     public List<OrderItem> getItems() { return items; }
 
+    public void setDeliveryFee(BigDecimal deliveryFee) { this.deliveryFee = deliveryFee; }
     public void setTotalPrice(BigDecimal totalPrice) { this.totalPrice = totalPrice; }
     public void setStatus(OrderStatus status) { this.status = status; }
 }
