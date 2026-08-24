@@ -31,6 +31,11 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private OrderStatus status = OrderStatus.PENDING;
 
+    @Enumerated(EnumType.STRING)
+    private PaymentStatus paymentStatus = PaymentStatus.UNPAID;
+
+    private String stripeSessionId;
+
     private LocalDateTime createdAt = LocalDateTime.now();
 
     private BigDecimal totalPrice = BigDecimal.ZERO;
@@ -63,6 +68,8 @@ public class Order {
     public String getSpecialInstructions() { return specialInstructions; }
     public BigDecimal getDeliveryFee() { return deliveryFee; }
     public OrderStatus getStatus() { return status; }
+    public PaymentStatus getPaymentStatus() { return paymentStatus; }
+    public String getStripeSessionId() { return stripeSessionId; }
     public LocalDateTime getCreatedAt() { return createdAt; }
     public BigDecimal getTotalPrice() { return totalPrice; }
     public List<OrderItem> getItems() { return items; }
@@ -70,4 +77,6 @@ public class Order {
     public void setDeliveryFee(BigDecimal deliveryFee) { this.deliveryFee = deliveryFee; }
     public void setTotalPrice(BigDecimal totalPrice) { this.totalPrice = totalPrice; }
     public void setStatus(OrderStatus status) { this.status = status; }
+    public void setPaymentStatus(PaymentStatus paymentStatus) { this.paymentStatus = paymentStatus; }
+    public void setStripeSessionId(String stripeSessionId) { this.stripeSessionId = stripeSessionId; }
 }

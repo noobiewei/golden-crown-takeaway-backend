@@ -2,12 +2,13 @@ package com.goldencrown.takeaway_backend.order;
 
 import com.goldencrown.takeaway_backend.menu.MenuItem;
 import com.goldencrown.takeaway_backend.menu.MenuItemRepository;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.stripe.exception.StripeException;
+import com.stripe.model.checkout.Session;
+import com.stripe.param.checkout.SessionCreateParams;
+import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.List;
 
 @RestController
@@ -17,6 +18,9 @@ public class OrderController {
     private static final BigDecimal MINIMUM_DELIVERY_ORDER = new BigDecimal("15");
     private static final BigDecimal STANDARD_DELIVERY_FEE = new BigDecimal("1.30");
     private static final BigDecimal HIGHER_DELIVERY_FEE = new BigDecimal("3.00");
+
+    private static final String SUCCESS_URL = "http://localhost:5173/confirmation?session_id={CHECKOUT_SESSION_ID}";
+    private static final String CANCEL_URL = "http://localhost:5173/checkout";
 
     // Postcode prefixes (outward code, optionally + sector digit, spaces removed)
     // that are far enough away to warrant the higher delivery fee. Everything
@@ -40,7 +44,7 @@ public class OrderController {
     }
 
     @PostMapping
-    public Order createOrder(@RequestBody CreateOrderRequest request) {
+    public CreateOrderResponse createOrder(@RequestBody CreateOrderRequest request) throws StripeException {
         Order order = new Order(
                 request.customerName(),
                 request.customerPhone(),
@@ -68,7 +72,71 @@ public class OrderController {
         order.setDeliveryFee(deliveryFee);
         order.setTotalPrice(subtotal.add(deliveryFee));
 
-        return orderRepository.save(order);
+        order = orderRepository.save(order);
+
+        Session session = createCheckoutSession(order, deliveryFee);
+        order.setStripeSessionId(session.getId());
+        order = orderRepository.save(order);
+
+        return new CreateOrderResponse(order, session.getUrl());
+    }
+
+    @GetMapping("/by-session/{sessionId}")
+    public Order getBySessionId(@PathVariable String sessionId) {
+        return orderRepository.findByStripeSessionId(sessionId)
+                .orElseThrow(() -> new IllegalArgumentException("No order for session: " + sessionId));
+    }
+
+    private Session createCheckoutSession(Order order, BigDecimal deliveryFee) throws StripeException {
+        SessionCreateParams.Builder paramsBuilder = SessionCreateParams.builder()
+                .setMode(SessionCreateParams.Mode.PAYMENT)
+                .setSuccessUrl(SUCCESS_URL)
+                .setCancelUrl(CANCEL_URL)
+                .putMetadata("orderId", order.getId().toString());
+
+        for (OrderItem item : order.getItems()) {
+            paramsBuilder.addLineItem(
+                    SessionCreateParams.LineItem.builder()
+                            .setQuantity((long) item.getQuantity())
+                            .setPriceData(
+                                    SessionCreateParams.LineItem.PriceData.builder()
+                                            .setCurrency("gbp")
+                                            .setUnitAmount(toPence(item.getPriceAtOrder()))
+                                            .setProductData(
+                                                    SessionCreateParams.LineItem.PriceData.ProductData.builder()
+                                                            .setName(item.getMenuItem().getName())
+                                                            .build()
+                                            )
+                                            .build()
+                            )
+                            .build()
+            );
+        }
+
+        if (deliveryFee.compareTo(BigDecimal.ZERO) > 0) {
+            paramsBuilder.addLineItem(
+                    SessionCreateParams.LineItem.builder()
+                            .setQuantity(1L)
+                            .setPriceData(
+                                    SessionCreateParams.LineItem.PriceData.builder()
+                                            .setCurrency("gbp")
+                                            .setUnitAmount(toPence(deliveryFee))
+                                            .setProductData(
+                                                    SessionCreateParams.LineItem.PriceData.ProductData.builder()
+                                                            .setName("Delivery fee")
+                                                            .build()
+                                            )
+                                            .build()
+                            )
+                            .build()
+            );
+        }
+
+        return Session.create(paramsBuilder.build());
+    }
+
+    private long toPence(BigDecimal amount) {
+        return amount.multiply(BigDecimal.valueOf(100)).setScale(0, RoundingMode.HALF_UP).longValueExact();
     }
 
     private BigDecimal calculateDeliveryFee(OrderType orderType, String postcode) {
