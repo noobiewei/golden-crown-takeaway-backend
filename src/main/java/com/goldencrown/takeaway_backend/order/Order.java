@@ -34,7 +34,11 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private PaymentStatus paymentStatus = PaymentStatus.UNPAID;
 
+    @Enumerated(EnumType.STRING)
+    private PaymentMethod paymentMethod;
+
     private String stripeSessionId;
+    private String orderToken;
 
     private LocalDateTime createdAt = LocalDateTime.now();
 
@@ -45,13 +49,14 @@ public class Order {
 
     protected Order() {}
 
-    public Order(String customerName, String customerPhone, OrderType orderType, String deliveryAddress, String deliveryPostcode, String specialInstructions) {
+    public Order(String customerName, String customerPhone, OrderType orderType, String deliveryAddress, String deliveryPostcode, String specialInstructions, PaymentMethod paymentMethod) {
         this.customerName = customerName;
         this.customerPhone = customerPhone;
         this.orderType = orderType;
         this.deliveryAddress = deliveryAddress;
         this.deliveryPostcode = deliveryPostcode;
         this.specialInstructions = specialInstructions;
+        this.paymentMethod = paymentMethod;
     }
 
     public void addItem(OrderItem item) {
@@ -69,7 +74,9 @@ public class Order {
     public BigDecimal getDeliveryFee() { return deliveryFee; }
     public OrderStatus getStatus() { return status; }
     public PaymentStatus getPaymentStatus() { return paymentStatus; }
+    public PaymentMethod getPaymentMethod() { return paymentMethod; }
     public String getStripeSessionId() { return stripeSessionId; }
+    public String getOrderToken() { return orderToken; }
     public LocalDateTime getCreatedAt() { return createdAt; }
     public BigDecimal getTotalPrice() { return totalPrice; }
     public List<OrderItem> getItems() { return items; }
@@ -79,4 +86,5 @@ public class Order {
     public void setStatus(OrderStatus status) { this.status = status; }
     public void setPaymentStatus(PaymentStatus paymentStatus) { this.paymentStatus = paymentStatus; }
     public void setStripeSessionId(String stripeSessionId) { this.stripeSessionId = stripeSessionId; }
+    public void setOrderToken(String orderToken) { this.orderToken = orderToken; }
 }

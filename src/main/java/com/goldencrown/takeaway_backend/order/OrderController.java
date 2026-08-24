@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/orders")
@@ -45,13 +46,24 @@ public class OrderController {
 
     @PostMapping
     public CreateOrderResponse createOrder(@RequestBody CreateOrderRequest request) throws StripeException {
+        if (request.customerName() == null || request.customerName().isBlank()) {
+            throw new IllegalArgumentException("Name is required");
+        }
+        if (request.customerPhone() == null || request.customerPhone().isBlank()) {
+            throw new IllegalArgumentException("Phone is required");
+        }
+        if (request.paymentMethod() == null) {
+            throw new IllegalArgumentException("paymentMethod is required");
+        }
+
         Order order = new Order(
-                request.customerName(),
-                request.customerPhone(),
+                request.customerName().trim(),
+                request.customerPhone().trim(),
                 request.orderType(),
                 request.deliveryAddress(),
                 request.deliveryPostcode(),
-                request.specialInstructions()
+                request.specialInstructions(),
+                request.paymentMethod()
         );
 
         BigDecimal subtotal = BigDecimal.ZERO;
@@ -74,6 +86,12 @@ public class OrderController {
 
         order = orderRepository.save(order);
 
+        if (request.paymentMethod() == PaymentMethod.CASH) {
+            order.setOrderToken(UUID.randomUUID().toString());
+            order = orderRepository.save(order);
+            return new CreateOrderResponse(order, null);
+        }
+
         Session session = createCheckoutSession(order, deliveryFee);
         order.setStripeSessionId(session.getId());
         order = orderRepository.save(order);
@@ -85,6 +103,12 @@ public class OrderController {
     public Order getBySessionId(@PathVariable String sessionId) {
         return orderRepository.findByStripeSessionId(sessionId)
                 .orElseThrow(() -> new IllegalArgumentException("No order for session: " + sessionId));
+    }
+
+    @GetMapping("/by-token/{orderToken}")
+    public Order getByOrderToken(@PathVariable String orderToken) {
+        return orderRepository.findByOrderToken(orderToken)
+                .orElseThrow(() -> new IllegalArgumentException("No order for token: " + orderToken));
     }
 
     private Session createCheckoutSession(Order order, BigDecimal deliveryFee) throws StripeException {
