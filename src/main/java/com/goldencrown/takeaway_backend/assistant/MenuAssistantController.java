@@ -8,6 +8,7 @@ import com.anthropic.models.messages.Model;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.goldencrown.takeaway_backend.menu.MenuItem;
 import com.goldencrown.takeaway_backend.menu.MenuItemRepository;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,19 +28,26 @@ public class MenuAssistantController {
 
     private final AnthropicClient anthropicClient;
     private final MenuItemRepository menuItemRepository;
+    private final AssistantRateLimiter rateLimiter;
 
     // A separate ObjectMapper instance deliberately: this one parses Claude's
     // reply text and must be the classic Jackson 2.x that anthropic-java-core
     // itself uses, not Spring's injected Jackson 3.x bean (incompatible types).
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    public MenuAssistantController(AnthropicClient anthropicClient, MenuItemRepository menuItemRepository) {
+    public MenuAssistantController(
+            AnthropicClient anthropicClient, MenuItemRepository menuItemRepository, AssistantRateLimiter rateLimiter) {
         this.anthropicClient = anthropicClient;
         this.menuItemRepository = menuItemRepository;
+        this.rateLimiter = rateLimiter;
     }
 
     @PostMapping("/recommend")
-    public RecommendResponse recommend(@RequestBody RecommendRequest request) {
+    public RecommendResponse recommend(@RequestBody RecommendRequest request, HttpServletRequest httpRequest) {
+        if (!rateLimiter.tryAcquire(httpRequest.getRemoteAddr())) {
+            throw new RateLimitExceededException("Too many requests — please try again in a few minutes.");
+        }
+
         List<MenuItem> availableItems = menuItemRepository.findByAvailableTrue();
         Map<Long, MenuItem> itemsById = availableItems.stream()
                 .collect(Collectors.toMap(MenuItem::getId, item -> item));
