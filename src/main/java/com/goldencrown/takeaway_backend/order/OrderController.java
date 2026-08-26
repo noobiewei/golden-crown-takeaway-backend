@@ -5,6 +5,7 @@ import com.goldencrown.takeaway_backend.menu.MenuItemRepository;
 import com.stripe.exception.StripeException;
 import com.stripe.model.checkout.Session;
 import com.stripe.param.checkout.SessionCreateParams;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
@@ -20,8 +21,8 @@ public class OrderController {
     private static final BigDecimal STANDARD_DELIVERY_FEE = new BigDecimal("1.30");
     private static final BigDecimal HIGHER_DELIVERY_FEE = new BigDecimal("3.00");
 
-    private static final String SUCCESS_URL = "http://localhost:5173/confirmation?session_id={CHECKOUT_SESSION_ID}";
-    private static final String CANCEL_URL = "http://localhost:5173/checkout";
+    @Value("${app.frontend-url}")
+    private String frontendUrl;
 
     // Postcode prefixes (outward code, optionally + sector digit, spaces removed)
     // that are far enough away to warrant the higher delivery fee. Everything
@@ -114,8 +115,8 @@ public class OrderController {
     private Session createCheckoutSession(Order order, BigDecimal deliveryFee) throws StripeException {
         SessionCreateParams.Builder paramsBuilder = SessionCreateParams.builder()
                 .setMode(SessionCreateParams.Mode.PAYMENT)
-                .setSuccessUrl(SUCCESS_URL)
-                .setCancelUrl(CANCEL_URL)
+                .setSuccessUrl(frontendUrl + "/confirmation?session_id={CHECKOUT_SESSION_ID}")
+                .setCancelUrl(frontendUrl + "/checkout")
                 .putMetadata("orderId", order.getId().toString());
 
         for (OrderItem item : order.getItems()) {
