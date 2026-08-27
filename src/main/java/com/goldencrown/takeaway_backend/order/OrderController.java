@@ -20,6 +20,7 @@ public class OrderController {
     private static final BigDecimal MINIMUM_DELIVERY_ORDER = new BigDecimal("15");
     private static final BigDecimal STANDARD_DELIVERY_FEE = new BigDecimal("1.30");
     private static final BigDecimal HIGHER_DELIVERY_FEE = new BigDecimal("3.00");
+    private static final BigDecimal FREE_DRINK_THRESHOLD = new BigDecimal("55");
 
     @Value("${app.frontend-url}")
     private String frontendUrl;
@@ -84,6 +85,12 @@ public class OrderController {
         BigDecimal deliveryFee = calculateDeliveryFee(request.orderType(), request.deliveryPostcode());
         order.setDeliveryFee(deliveryFee);
         order.setTotalPrice(subtotal.add(deliveryFee));
+
+        // Only honour a free-drink choice if the order actually qualifies —
+        // checked server-side so it can't be claimed via a direct API call.
+        if (request.freeDrinkChoice() != null && subtotal.compareTo(FREE_DRINK_THRESHOLD) >= 0) {
+            order.setFreeDrinkChoice(request.freeDrinkChoice());
+        }
 
         order = orderRepository.save(order);
 

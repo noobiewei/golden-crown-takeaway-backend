@@ -10,5 +10,6 @@ public record CreateOrderRequest(
         String deliveryPostcode,
         String specialInstructions,
         PaymentMethod paymentMethod,
+        FreeDrinkChoice freeDrinkChoice,
         List<OrderLineRequest> items
 ) {}

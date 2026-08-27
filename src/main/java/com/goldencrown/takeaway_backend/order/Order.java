@@ -40,6 +40,9 @@ public class Order {
     private String stripeSessionId;
     private String orderToken;
 
+    @Enumerated(EnumType.STRING)
+    private FreeDrinkChoice freeDrinkChoice;
+
     private LocalDateTime createdAt = LocalDateTime.now();
 
     private BigDecimal totalPrice = BigDecimal.ZERO;
@@ -77,6 +80,7 @@ public class Order {
     public PaymentMethod getPaymentMethod() { return paymentMethod; }
     public String getStripeSessionId() { return stripeSessionId; }
     public String getOrderToken() { return orderToken; }
+    public FreeDrinkChoice getFreeDrinkChoice() { return freeDrinkChoice; }
     public LocalDateTime getCreatedAt() { return createdAt; }
     public BigDecimal getTotalPrice() { return totalPrice; }
     public List<OrderItem> getItems() { return items; }
@@ -87,4 +91,5 @@ public class Order {
     public void setPaymentStatus(PaymentStatus paymentStatus) { this.paymentStatus = paymentStatus; }
     public void setStripeSessionId(String stripeSessionId) { this.stripeSessionId = stripeSessionId; }
     public void setOrderToken(String orderToken) { this.orderToken = orderToken; }
+    public void setFreeDrinkChoice(FreeDrinkChoice freeDrinkChoice) { this.freeDrinkChoice = freeDrinkChoice; }
 }
