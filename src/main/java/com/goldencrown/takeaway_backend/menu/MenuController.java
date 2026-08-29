@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/menu")
@@ -28,5 +29,10 @@ public class MenuController {
     @GetMapping("/popular")
     public List<MenuItem> getPopularItems() {
         return orderItemRepository.findPopularMenuItems(PageRequest.of(0, 4));
+    }
+
+    @GetMapping("/extras-catalog")
+    public Map<String, List<DishExtra>> getExtrasCatalog() {
+        return ExtrasCatalog.all();
     }
 }

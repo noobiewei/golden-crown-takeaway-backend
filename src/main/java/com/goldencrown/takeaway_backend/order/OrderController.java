@@ -1,5 +1,7 @@
 package com.goldencrown.takeaway_backend.order;
 
+import com.goldencrown.takeaway_backend.menu.DishExtra;
+import com.goldencrown.takeaway_backend.menu.ExtrasCatalog;
 import com.goldencrown.takeaway_backend.menu.MenuItem;
 import com.goldencrown.takeaway_backend.menu.MenuItemRepository;
 import com.stripe.exception.StripeException;
@@ -12,6 +14,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/orders")
@@ -73,8 +76,23 @@ public class OrderController {
             MenuItem menuItem = menuItemRepository.findById(line.menuItemId())
                     .orElseThrow(() -> new IllegalArgumentException("Menu item not found: " + line.menuItemId()));
 
-            order.addItem(new OrderItem(menuItem, line.quantity(), line.note()));
-            subtotal = subtotal.add(menuItem.getPrice().multiply(BigDecimal.valueOf(line.quantity())));
+            OrderItem orderItem = new OrderItem(menuItem, line.quantity(), line.note());
+
+            // Extras are only ever priced from the dish's own catalog entry,
+            // never from the client, so a tampered request can't claim a
+            // cheaper (or free) extra.
+            List<DishExtra> available = ExtrasCatalog.forDish(menuItem.getName());
+            if (line.extraNames() != null) {
+                for (String extraName : line.extraNames()) {
+                    available.stream()
+                            .filter(extra -> extra.name().equals(extraName))
+                            .findFirst()
+                            .ifPresent(extra -> orderItem.addExtra(new OrderItemExtra(extra.name(), extra.price())));
+                }
+            }
+
+            order.addItem(orderItem);
+            subtotal = subtotal.add(orderItem.getUnitPriceWithExtras().multiply(BigDecimal.valueOf(line.quantity())));
         }
 
         if (request.orderType() == OrderType.DELIVERY && subtotal.compareTo(MINIMUM_DELIVERY_ORDER) < 0) {
@@ -127,16 +145,24 @@ public class OrderController {
                 .putMetadata("orderId", order.getId().toString());
 
         for (OrderItem item : order.getItems()) {
+            String name = item.getMenuItem().getName();
+            if (!item.getExtras().isEmpty()) {
+                String extraNames = item.getExtras().stream()
+                        .map(OrderItemExtra::getName)
+                        .collect(Collectors.joining(", "));
+                name = name + " + " + extraNames;
+            }
+
             paramsBuilder.addLineItem(
                     SessionCreateParams.LineItem.builder()
                             .setQuantity((long) item.getQuantity())
                             .setPriceData(
                                     SessionCreateParams.LineItem.PriceData.builder()
                                             .setCurrency("gbp")
-                                            .setUnitAmount(toPence(item.getPriceAtOrder()))
+                                            .setUnitAmount(toPence(item.getUnitPriceWithExtras()))
                                             .setProductData(
                                                     SessionCreateParams.LineItem.PriceData.ProductData.builder()
-                                                            .setName(item.getMenuItem().getName())
+                                                            .setName(name)
                                                             .build()
                                             )
                                             .build()
