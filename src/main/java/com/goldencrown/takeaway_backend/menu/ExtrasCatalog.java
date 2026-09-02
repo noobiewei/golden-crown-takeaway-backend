@@ -43,8 +43,9 @@ public final class ExtrasCatalog {
 
     private static final Map<String, List<DishExtra>> DISH_EXTRAS = Map.ofEntries(
             Map.entry("Kung Po Chicken", combine(MEAT_EXTRAS, RICE_NOODLE_EXTRAS, COMMON_EXTRAS)),
-            Map.entry("Sweet & Sour Pork", combine(MEAT_EXTRAS, RICE_NOODLE_EXTRAS, COMMON_EXTRAS)),
-            Map.entry("Beef in Black Bean Sauce", combine(MEAT_EXTRAS, RICE_NOODLE_EXTRAS, COMMON_EXTRAS)),
+            Map.entry("Sweet & Sour Pork Balls", combine(MEAT_EXTRAS, RICE_NOODLE_EXTRAS, COMMON_EXTRAS)),
+            Map.entry("Sweet & Sour Pork HongKong Style", combine(MEAT_EXTRAS, RICE_NOODLE_EXTRAS, COMMON_EXTRAS)),
+            Map.entry("Beef with Green Pepper in Black Bean Sauce", combine(MEAT_EXTRAS, RICE_NOODLE_EXTRAS, COMMON_EXTRAS)),
             Map.entry("Chicken & Sweetcorn Soup", COMMON_EXTRAS),
             Map.entry("Mixed Hors D'Oeuvres", COMMON_EXTRAS)
     );
