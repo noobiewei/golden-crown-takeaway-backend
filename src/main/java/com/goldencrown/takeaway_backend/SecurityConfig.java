@@ -60,7 +60,7 @@ public class SecurityConfig {
 
     private CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of(frontendUrl));
+        configuration.setAllowedOrigins(allowedOrigins());
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "PATCH", "DELETE"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowCredentials(true);
@@ -68,5 +68,17 @@ public class SecurityConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);
         return source;
+    }
+
+    // FRONTEND_URL only ever names one of goldencrownwatford.co.uk or
+    // www.goldencrownwatford.co.uk, but the site answers to both — browsers
+    // send an Origin header on same-site fetches too, so whichever variant
+    // isn't in the allowlist gets its requests (e.g. admin login) rejected
+    // with 403. Derive and allow both from whatever's configured.
+    private List<String> allowedOrigins() {
+        String scheme = frontendUrl.startsWith("https://") ? "https://" : "http://";
+        String host = frontendUrl.substring(scheme.length());
+        String bareHost = host.startsWith("www.") ? host.substring(4) : host;
+        return List.of(scheme + bareHost, scheme + "www." + bareHost);
     }
 }
