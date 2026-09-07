@@ -26,6 +26,9 @@ public class Order {
     @Column(length = 1000)
     private String specialInstructions;
 
+    @Column(length = 1000)
+    private String specialInstructionsZh;
+
     private BigDecimal deliveryFee = BigDecimal.ZERO;
 
     @Enumerated(EnumType.STRING)
@@ -74,6 +77,7 @@ public class Order {
     public String getDeliveryAddress() { return deliveryAddress; }
     public String getDeliveryPostcode() { return deliveryPostcode; }
     public String getSpecialInstructions() { return specialInstructions; }
+    public String getSpecialInstructionsZh() { return specialInstructionsZh; }
     public BigDecimal getDeliveryFee() { return deliveryFee; }
     public OrderStatus getStatus() { return status; }
     public PaymentStatus getPaymentStatus() { return paymentStatus; }
@@ -92,4 +96,5 @@ public class Order {
     public void setStripeSessionId(String stripeSessionId) { this.stripeSessionId = stripeSessionId; }
     public void setOrderToken(String orderToken) { this.orderToken = orderToken; }
     public void setFreeDrinkChoice(FreeDrinkChoice freeDrinkChoice) { this.freeDrinkChoice = freeDrinkChoice; }
+    public void setSpecialInstructionsZh(String specialInstructionsZh) { this.specialInstructionsZh = specialInstructionsZh; }
 }

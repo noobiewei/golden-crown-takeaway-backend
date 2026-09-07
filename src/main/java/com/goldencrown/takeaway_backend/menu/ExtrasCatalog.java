@@ -17,28 +17,30 @@ import java.util.stream.Stream;
  *    the list of extras it offers. Combine groups with combine(...), or
  *    write a one-off List.of(...) for a dish that needs something unique.
  *  - A dish with no entry here simply won't show a "Customise" button.
+ *  - Each DishExtra also carries a Chinese name (nameZh), printed on the
+ *    kitchen copy of receipts.
  */
 public final class ExtrasCatalog {
 
     private ExtrasCatalog() {}
 
     private static final List<DishExtra> MEAT_EXTRAS = List.of(
-            new DishExtra("Extra Chicken", new BigDecimal("1.50")),
-            new DishExtra("Extra Beef", new BigDecimal("1.80")),
-            new DishExtra("Extra Prawns", new BigDecimal("2.00")),
-            new DishExtra("Extra Pork", new BigDecimal("1.50"))
+            new DishExtra("Extra Chicken", new BigDecimal("1.50"), "加鸡肉"),
+            new DishExtra("Extra Beef", new BigDecimal("1.80"), "加牛肉"),
+            new DishExtra("Extra Prawns", new BigDecimal("2.00"), "加虾"),
+            new DishExtra("Extra Pork", new BigDecimal("1.50"), "加猪肉")
     );
 
     private static final List<DishExtra> RICE_NOODLE_EXTRAS = List.of(
-            new DishExtra("Extra Rice", new BigDecimal("2.00")),
-            new DishExtra("Extra Noodles", new BigDecimal("2.00"))
+            new DishExtra("Extra Rice", new BigDecimal("2.00"), "加饭"),
+            new DishExtra("Extra Noodles", new BigDecimal("2.00"), "加面")
     );
 
     private static final List<DishExtra> COMMON_EXTRAS = List.of(
-            new DishExtra("Extra Vegetables", new BigDecimal("1.00")),
-            new DishExtra("Extra Egg", new BigDecimal("0.80")),
-            new DishExtra("Extra Sauce", new BigDecimal("0.50")),
-            new DishExtra("Extra Spring Onion", new BigDecimal("0.50"))
+            new DishExtra("Extra Vegetables", new BigDecimal("1.00"), "加菜"),
+            new DishExtra("Extra Egg", new BigDecimal("0.80"), "加蛋"),
+            new DishExtra("Extra Sauce", new BigDecimal("0.50"), "加酱"),
+            new DishExtra("Extra Spring Onion", new BigDecimal("0.50"), "加葱")
     );
 
     private static final Map<String, List<DishExtra>> DISH_EXTRAS = Map.ofEntries(

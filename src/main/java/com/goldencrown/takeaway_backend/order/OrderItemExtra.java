@@ -18,17 +18,20 @@ public class OrderItemExtra {
     private OrderItem orderItem;
 
     private String name;
+    private String nameZh;
     private BigDecimal priceAtOrder;
 
     protected OrderItemExtra() {}
 
-    public OrderItemExtra(String name, BigDecimal priceAtOrder) {
+    public OrderItemExtra(String name, String nameZh, BigDecimal priceAtOrder) {
         this.name = name;
+        this.nameZh = nameZh;
         this.priceAtOrder = priceAtOrder;
     }
 
     public Long getId() { return id; }
     public String getName() { return name; }
+    public String getNameZh() { return nameZh; }
     public BigDecimal getPriceAtOrder() { return priceAtOrder; }
 
     void setOrderItem(OrderItem orderItem) { this.orderItem = orderItem; }

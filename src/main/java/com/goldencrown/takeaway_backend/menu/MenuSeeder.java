@@ -69,6 +69,11 @@ public class MenuSeeder implements CommandLineRunner {
                     item.setImageUrl(imageUrl);
                 }
 
+                String nameZh = record.get("nameZh");
+                if (nameZh != null && !nameZh.isBlank()) {
+                    item.setNameZh(nameZh);
+                }
+
                 menuItemRepository.save(item);
             }
         }

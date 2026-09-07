@@ -87,7 +87,7 @@ public class OrderController {
                     available.stream()
                             .filter(extra -> extra.name().equals(extraName))
                             .findFirst()
-                            .ifPresent(extra -> orderItem.addExtra(new OrderItemExtra(extra.name(), extra.price())));
+                            .ifPresent(extra -> orderItem.addExtra(new OrderItemExtra(extra.name(), extra.nameZh(), extra.price())));
                 }
             }
 

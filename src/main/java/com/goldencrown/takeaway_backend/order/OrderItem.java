@@ -27,6 +27,7 @@ public class OrderItem {
     private int quantity;
     private BigDecimal priceAtOrder;
     private String note;
+    private String noteZh;
 
     @OneToMany(mappedBy = "orderItem", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<OrderItemExtra> extras = new ArrayList<>();
@@ -45,12 +46,15 @@ public class OrderItem {
     public int getQuantity() { return quantity; }
     public BigDecimal getPriceAtOrder() { return priceAtOrder; }
     public String getNote() { return note; }
+    public String getNoteZh() { return noteZh; }
     public List<OrderItemExtra> getExtras() { return extras; }
 
     public void addExtra(OrderItemExtra extra) {
         extras.add(extra);
         extra.setOrderItem(this);
     }
+
+    public void setNoteZh(String noteZh) { this.noteZh = noteZh; }
 
     public BigDecimal getUnitPriceWithExtras() {
         return extras.stream()

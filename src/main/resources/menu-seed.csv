@@ -1,247 +1,247 @@
-name,description,price,category,vegetarian,spicy,containsNuts,imageUrl
-Mixed Hors D'Oeuvres,"Sesame Prawn on Toast, Vegetarian Mini Rolls, Spare Ribs, Satay Chicken, Crispy Seaweed",6.90,Starters,false,false,true,
-Quarter Crispy Aromatic Duck,"Served with Spring Onions, Cucumber, Pancakes (6) & Hoi Sin Sauce",11.80,Starters,false,false,false,
-Half Crispy Aromatic Duck,"Served with Spring Onions, Cucumber, Pancakes (12) & Hoi Sin Sauce",18.90,Starters,false,false,false,
-Whole Crispy Aromatic Duck,"Served with Spring Onions, Cucumber, Pancakes (24) & Hoi Sin Sauce",30.90,Starters,false,false,false,
-Crispy Aromatic Lamb,"Served with Spring Onions, Cucumber, Pancakes (6) & Hoi Sin Sauce",11.80,Starters,false,false,false,
-Crispy Seaweed,,4.80,Starters,false,false,false,
-Spring Rolls (2),Contains pork and shrimp,4.50,Starters,false,false,false,
-Mixed Meat Rolls (3),,4.80,Starters,false,false,false,
-Vegetarian Mini Spring Rolls (10), ,4.50,Starters,true,false,false,
-Satay Chicken (4), ,6.80,Starters,false,true,true,
-Spare Ribs with Honey Sauce, ,7.30,Starters,false,false,false,
-Dumpling (6),,6.50,Starters,false,false,false,
-Sesame Prawn on Toast (8), ,6.80,Starters,false,false,false,
-Captial Spare Ribs, ,7.30,Starters,false,false,false,
-Salt & Pepper Spare Ribs, ,7.30,Starters,false,true,false,
-Barbecued Spare Ribs, ,7.30,Starters,false,false,false,
-Smoked Chicken, ,6.80,Starters,false,true,false,
-Salt & Pepper Squid, ,7.50,Starters,false,true,false,
-Salt & Pepper Prawns (10), ,7.50,Starters,false,true,false,
-Salt & Pepper Tofu/Bean Curd, ,6.00,Starters,true,true,false,
-Butterfly King Prawn (8), Comes with sweet & sour sauce,7.20,Starters,false,false,false,
-Deep Fried Chicken Wings, ,5.90,Starters,false,true,false,
-Salt & Pepper Chicken Wings, ,5.90,Starters,false,true,false,
-Curry Samosas (10), Comes with sweet & sour sauce,4.60,Starters,false,true,false,
-Salt & Pepper Pork, ,6.80,Starters,false,true,false,
-Salt & peppers Chicken, ,6.80,Starters,false,true,false,
-Prawn Crackers, ,2.50,Starters,false,false,false,
-Chicken & Sweetcorn Soup, ,3.80,Soups,false,false,false,
-Crabmeat & Sweetcorn Soup, ,3.80,Soups,false,false,false,
-Chicken & Noodles Soup, ,3.80,Soups,false,false,false,
-Chicken & Mushroom Soup, ,3.80,Soups,false,false,false,
-Hot & Sour Soup, ,4.10,Soups,false,true,false,
-Vegetarian Hot & Sour Soup, ,3.60,Soups,false,false,false,
-Won Ton Soup, ,5.10,Soups,false,false,false,
-Roast Pork & Chicken on Boiled Rice in BBQ sauce, ,7.50,Rice Dishes (In Large Container),false,false,false,
-Roast Pork & Chicken on Fried Rice in BBQ sauce, ,7.50,Rice Dishes (In Large Container),false,false,false,
-Roast Pork on Boiled Rice in BBQ sauce, ,7.50,Rice Dishes (In Large Container),false,false,false,
-Roast Pork on Fried Rice in BBQ sauce, ,7.50,Rice Dishes (In Large Container),false,false,false,
-Roast Chicken on Boiled Rice in BBQ sauce, ,7.50,Rice Dishes (In Large Container),false,false,false,
-Roast Chicken on Fried Rice in BBQ sauce, ,7.50,Rice Dishes (In Large Container),false,false,false,
-Roast Duck on Boiled Rice in BBQ sauce, ,7.90,Rice Dishes (In Large Container),false,false,false,
-Roast Duck on Fried Rice in BBQ sauce, ,7.90,Rice Dishes (In Large Container),false,false,false,
-Roast Duck Fried Rice, ,7.50,Rice Dishes (In Large Container),false,false,false,
-House Special on Boiled Rice,in sauce,7.60,Rice Dishes (In Large Container),false,false,false,
-House Special on Fried Rice,in sauce,7.60,Rice Dishes (In Large Container),false,false,false,
-Yeung Chow/Special Fried Rice, ,6.20,Rice Dishes (In Large Container),false,false,false,
-Thai Style Special Friend Rice, ,6.80,Rice Dishes (In Large Container),false,false,false,
-Chicken Fried Rice, ,6.10,Rice Dishes (In Large Container),false,false,false,
-Thai Style Chicken Fried Rice, ,6.80,Rice Dishes (In Large Container),false,false,false,
-Beef Fried Rice, ,6.20,Rice Dishes (In Large Container),false,false,false,
-Thai Style Fried Rice, ,6.90,Rice Dishes (In Large Container),false,false,false,
-Roast Pork Fried Rice, ,6.10,Rice Dishes (In Large Container),false,false,false,
-Thai Style Pork Fried Rice, ,6.80,Rice Dishes (In Large Container),false,false,false,
-King Prawns Fried Rice, ,6.90,Rice Dishes (In Large Container),false,false,false,
-Thai Style King Prawn Fried Rice, ,7.40,Rice Dishes (In Large Container),false,false,false,
-Shrimp Fried Rice, ,6.50,Rice Dishes (In Large Container),false,false,false,
-Singapore Style Fried Rice, ,6.90,Rice Dishes (In Large Container),false,true,false,
-Egg Fried Rice,Large,4.90,Rice Dishes (In Large Container),true,false,false,
-Egg Fried Rice,Small,4.30,Rice Dishes (In Large Container),true,false,false,
-Thai Style Egg Fried Rice, ,5.80,Rice Dishes (In Large Container),true,false,false,
-Mixed Vegetables on Boiled Rice, Comes in sauce,6.70,Rice Dishes (In Large Container),true,false,false,
-Mixed Vegetables on Fried Rice, Comes in sauce,6.70,Rice Dishes (In Large Container),false,false,false,
-Boiled Rice,Small,4.30,Rice Dishes (In Large Container),true,false,false,
-Pineapple Fried Rice, ,5.50,Rice Dishes (In Large Container),true,false,false,
-Chicken & Pineapple Fried Rice, ,6.50,Rice Dishes (In Large Container),false,false,false,
-Beef & Pineapple Fried Rice, ,6.50,Rice Dishes (In Large Container),false,false,false,
-Roast Pork & Pineapple Fried Rice, ,6.50,Rice Dishes (In Large Container),false,false,false,
-King Prawn & Pineapple Fried Rice, ,7.10,Rice Dishes (In Large Container),false,false,false,
-Shrip & Pineapple Fried Rice, ,6.80,Rice Dishes (In Large Container),false,false,false,
-Roast Pork & Chicken on ChowMein in BBQ sauce, ,7.50,Noodles Dishes (In Large Container),false,false,false,
-Roast Pork on ChowMein in BBQ sauce, ,7.50,Noodles Dishes (In Large Container),false,false,false,
-Chicken on ChowMein in BBQ sauce, ,7.50,Noodles Dishes (In Large Container),false,false,false,
-Roast Duck on ChowMein in BBQ sauce, ,7.90,Noodles Dishes (In Large Container),false,false,false,
-Roast Duck ChowMein, ,7.50,Noodles Dishes (In Large Container),false,false,false,
-House Special on ChowMein,in sauce,7.80,Noodles Dishes (In Large Container),false,false,false,
-Yeung Chow/Special ChowMein, ,6.40,Noodles Dishes (In Large Container),false,false,false,
-Chicken ChowMein, ,6.20,Noodles Dishes (In Large Container),false,false,false,
-Beef ChowMein, ,6.30,Noodles Dishes (In Large Container),false,false,false,
-Roast Pork ChowMein, ,6.20,Noodles Dishes (In Large Container),false,false,false,
-King Prawn ChowMein, ,7.20,Noodles Dishes (In Large Container),false,false,false,
-Shrimp ChowMein, ,6.50,Noodles Dishes (In Large Container),false,false,false,
-Singapore Style ChowMein, ,6.80,Noodles Dishes (In Large Container),false,true,false,
-Beansprouts ChowMein, ,5.10,Noodles Dishes (In Large Container),true,false,false,
-Plain ChowMein, ,5.10,Noodles Dishes (In Large Container),false,true,false,
-Mushrooms ChowMein, ,5.50,Noodles Dishes (In Large Container),false,true,false,
-Mixed Vegetables on ChowMein,in sauce,5.50,Noodles Dishes (In Large Container),false,true,false,
-Singapore Style Fried Rice Noodles/Vermicelli, ,6.80,Noodles Dishes (In Large Container),true,false,false,
-Chicken Singapore Style Friend Rice Noodles/Vermicelli, ,6.80,Noodles Dishes (In Large Container),true,false,false,
-Vegetarian Singapore Style Fried Rice Noodles/Vermicelli, ,6.30,Noodles Dishes (In Large Container),true,true,false,
-Seafood ChowMein,in sauce,7.90,Noodles Dishes (In Large Container),false,false,false,
-Crispy Noodles with Chicken in Black Bean Sauce, ,7.90,Noodles Dishes (In Large Container),false,true,false,
-Crispy Noodles with Beef in Black Bean Sauce, ,7.90,Noodles Dishes (In Large Container),false,true,false,
-Crispy Noodles with Roast Duck in Black Bean Sauce, ,8.20,Noodles Dishes (In Large Container),false,true,false,
-Crispy Noodles with Mixed Vegetables in Black Bean Sauce, ,7.10,Noodles Dishes (In Large Container),true,true,false,
-Seafood Fried Ho Fun, ,8.90,Noodles Dishes (In Large Container),false,false,false,
-Singapore Style Fried Ho Fun, ,8.50,Noodles Dishes (In Large Container),false,true,false,
-Chicken Fried Ho Fun, ,8.30,Noodles Dishes (In Large Container),false,false,false,
-Beef Fried Ho Fun, ,8.50,Noodles Dishes (In Large Container),false,false,false,
-Ho Fun with CHicken in Black Bean Sauce, ,8.50,Noodles Dishes (In Large Container),false,true,false,
-Ho Fun with Beef in Black Bean Sauce, ,8.70,Noodles Dishes (In Large Container),false,true,false,
-Ho Fun with Roast Duck in Black Bean Sauce, ,8.90,Noodles Dishes (In Large Container),false,true,false,
-Satay Yeung Chow/Special ChowMein, ,6.80,Noodles Dishes (In Large Container),false,true,true,
-Satay Chicken ChowMein, ,6.60,Noodles Dishes (In Large Container),false,true,true,
-Satay Beef ChowMein, ,6.80,Noodles Dishes (In Large Container),false,true,true,
-Satay Roast Pork ChowMein, ,6.80,Noodles Dishes (In Large Container),false,true,true,
-Satay King Prawn ChowMein, ,7.50,Noodles Dishes (In Large Container),false,true,true,
-Satay Shrimp ChowMein, ,7.20,Noodles Dishes (In Large Container),false,true,true,
-Satay Beansprouts ChowMein, ,5.80,Noodles Dishes (In Large Container),true,true,true,
-Satay Mushroom ChowMein, ,5.90,Noodles Dishes (In Large Container),true,true,true,
-Chinese Style Chicken, ,6.80,Chicken Dishes,false,false,false,
-Chicken with Mushroom, ,6.80,Chicken Dishes,false,false,false,
-Chicken with Bamboo Shoots & Water Chestnuts, ,6.80,Chicken Dishes,false,false,false,
-Chicken with Pineapple, ,6.80,Chicken Dishes,false,false,false,
-Chicken with Mixed Vegetables, ,6.80,Chicken Dishes,false,false,false,
-Chicken Chop Suey, ,6.80,Chicken Dishes,false,false,false,
-Chicken with Cashew Nuts, ,7.00,Chicken Dishes,false,false,true,
-Chicken with Green Ppepper in Black Bean Sauce, ,6.80,Chicken Dishes,false,true,false,
-Szechuan Style Chicken, ,6.80,Chicken Dishes,false,true,false,
-Chicken in Oyster Sauce, ,6.80,Chicken Dishes,false,false,false,
-Chicken in Garlic Sauce, ,7.10,Chicken Dishes,false,false,false,
-Satay Chicken, ,6.80,Chicken Dishes,false,true,true,
-Chicken with Ginger & Spring Onion, ,6.80,Chicken Dishes,false,false,false,
-Chicken in Yellow Bean Sauce, ,6.80,Chicken Dishes,false,false,true,
-Thai Style Chicken, ,7.10,Chicken Dishes,false,true,false,
-Chicken in Black Pepper Sauce, ,6.80,Chicken Dishes,false,true,false,
-Kung Po Chicken, ,6.90,Chicken Dishes,false,true,true,
-Crispy Shredded Chicken, ,6.90,Chicken Dishes,false,true,false,
-Crispy Shredded Beef, ,7.40,Beef Dishes,false,true,false,
-Beef with Mushroom, ,7.10,Beef Dishes,false,false,false,
-Beef with Bamboo Shoots & Water Chestnuts, ,7.10,Beef Dishes,false,false,false,
-Beef with Pineapple, ,7.10,Beef Dishes,false,false,false,
-Beef with Green Pepper in Black Bean Sauce, ,7.10,Beef Dishes,false,true,false,
-Beef Chop Suey, ,7.10,Beef Dishes,false,false,false,
-Szechuan Style Beef, ,7.10,Beef Dishes,false,true,false,
-Satay Beef, ,7.10,Beef Dishes,false,true,true,
-Beef with Mixed Vegetables, ,7.10,Beef Dishes,false,false,false,
-Beef with Cashew Nuts, ,7.30,Beef Dishes,false,false,true,
-Beef with Ginger & Spring Onion, ,7.10,Beef Dishes,false,false,false,
-Thai Style Beef, ,7.10,Beef Dishes,false,false,true,
-Beef in Black Pepper Sauce, ,7.10,Beef Dishes,false,false,true,
-Beef in Oyster Sauce, ,7.10,Beef Dishes,false,false,false,
-Mixed Meat with Green Peppers in Black Bean Sauce, ,7.60,Seafood Dishes,false,true,false,
-King Prawn in Peking Sauce, ,7.60,Seafood Dishes,false,true,false,
-King Prawn with Cashew Nuts, ,7.60,Seafood Dishes,false,false,true,
-King Prawn in Garlic Sauce, ,7.10,Seafood Dishes,false,false,false,
-Kung Po King Prawn, ,7.60,Seafood Dishes,false,true,true,
-King Prawn with Green Pepper in Black Bean Sauce, ,7.60,Seafood Dishes,false,true,false,
-Satay King Prawn, ,7.60,Seafood Dishes,false,true,true,
-King Prawn with Pineapple, ,7.60,Seafood Dishes,false,false,false,
-Szechuan Style King Prawn, ,7.60,Seafood Dishes,false,true,false,
-King Prawn with Bamboo Shoot & Water Chestnuts, ,7.60,Seafood Dishes,false,false,false,
-King Prawn with Mushroom, ,7.60,Seafood Dishes,false,false,false,
-King Prawn with Mixed Vegetables, ,7.60,Seafood Dishes,false,false,false,
-King Prawn Chop Suey, ,7.60,Seafood Dishes,false,false,false,
-King Prawn in Yellow Bean Sauce, ,7.60,Seafood Dishes,false,true,false,
-King Prawn in Oyster Sauce, ,7.60,Seafood Dishes,false,false,false,
-King Prawn with Ginger & Spring Onion, ,7.60,Seafood Dishes,false,false,false,
-Thai Style King Prawn, ,7.90,Seafood Dishes,false,true,false,
-King Prawn in Coconut Sauce, ,7.90,Seafood Dishes,false,false,false,
-Thai Style Seafood, ,8.70,Seafood Dishes,false,false,false,
-Chinese Style Roast Pork, ,6.80,Pork Dishes,false,false,false,
-Roast Pork with Green Pepper in Black Bean Sauce, ,6.80,Pork Dishes,false,true,false,
-Roast Pork in Yellow Bean Sauce, ,7.10,Pork Dishes,false,false,true,
-Roast Pork with Mixed Vegetables, ,6.80,Pork Dishes,false,false,false,
-Roast Pork Chop Suey, ,6.80,Pork Dishes,false,false,false,
-Roast Pork with Ginger & Spring Onion, ,6.80,Pork Dishes,false,false,false,
-Roast Pork in Coconut Sauce, ,6.80,Pork Dishes,false,false,false,
-Kung Po Pork, ,6.80,Pork Dishes,false,true,true,
-Lamb with Ginger & Spring Onion, ,8.40,Lamb Dishes,false,false,false,
-Lamb with Green Pepper in Black Bean Sauce, ,8.40,Lamb Dishes,false,true,false,
-Lamb in Black Pepper Sauce, ,8.40,Lamb Dishes,false,true,false,
-Lamb in Oyster Sauce, ,8.40,Lamb Dishes,false,false,false,
-Szechuan Style Lamb, ,8.40,Lamb Dishes,false,true,false,
-Special Curry, ,7.50,Curry Dishes,false,true,false,
-Chicken Curry, ,6.60,Curry Dishes,false,true,false,
-Beef Curry, ,6.80,Curry Dishes,false,true,false,
-Roast Pork Curry, ,6.60,Curry Dishes,false,true,false,
-Lamb Curry, ,8.30,Curry Dishes,false,true,false,
-King Prawn Curry, ,7.60,Curry Dishes,false,true,false,
-Mixed Vegetables Curry, ,6.10,Curry Dishes,false,true,false,
-Roast Duck Curry, ,8.20,Curry Dishes,false,true,false,
-Sweet & Sour Chicken Balls, ,6.60,Sweet & Sour Dishes,false,false,false,
-Sweet & Sour Pork Balls, ,6.60,Sweet & Sour Dishes,false,false,false,
-Sweet & Sour Prawn Balls, ,7.50,Sweet & Sour Dishes,false,false,false,
-Sweet & Sour Chicken HongKong Style, ,6.80,Sweet & Sour Dishes,false,false,false,
-Sweet & Sour Pork HongKong Style, ,6.80,Sweet & Sour Dishes,false,false,false,
-Sweet & Sour King Prawn HongKong Style, ,7.60,Sweet & Sour Dishes,false,false,false,
-Sweet & Sour Fish HongKong Style, ,6.80,Sweet & Sour Dishes,false,false,false,
-Crispy Chicken, ,6.80,Sweet & Sour Dishes,false,true,false,
-Crispy Pork, ,6.80,Sweet & Sour Dishes,false,true,false,
-Lemon Chicken, ,7.10,Sweet & Sour Dishes,false,false,false,
-Duck with Plum Sauce, ,8.20,Duck Dishes,false,false,false,
-Chinese Style Duck, ,8.20,Duck Dishes,false,false,false,
-Roast Duck with Pineapple, ,8.20,Duck Dishes,false,false,false,
-Roast Duck in Garlic Sauce, ,8.20,Duck Dishes,false,false,false,
-Roast Duck with Ginger & Spring Onion, ,8.20,Duck Dishes,false,false,false,
-Roast Duck with Green Pepper in Black Bean Sauce, ,8.20,Duck Dishes,false,true,false,
-Stir Fried Mixed Vegetables, ,5.60,Vegetarian Dishes,true,false,false,
-Fried Mushroom, ,5.60,Vegetarian Dishes,true,false,false,
-Mixed Vegetables in Black Bean Sauce, ,5.60,Vegetarian Dishes,true,true,false,
-Fried Bamboo Shoot & Water Chestnuts, ,5.60,Vegetarian Dishes,true,false,false,
-Fried Beansprouts, ,5.10,Vegetarian Dishes,true,false,false,
-Szechuan Style Mixed Vegetables, ,5.80,Vegetarian Dishes,true,true,false,
-Mixed Vegetables in Yellow Bean Sauce, ,5.60,Vegetarian Dishes,true,false,true,
-Mixed Vegetables with Cashew Nuts, ,6.10,Vegetarian Dishes,true,false,true,
-Broccoli with Garlic, ,6.10,Vegetarian Dishes,true,false,false,
-Chicken Omelette & Chips, ,6.80,Omelette Dishes,false,false,false,
-Roast Pork Omelette & Chips, ,6.80,Omelette Dishes,false,false,false,
-King Prawn Omelette & Chips, ,7.50,Omelette Dishes,false,false,false,
-Mushroom Omelette & Chips, ,6.20,Omelette Dishes,false,false,false,
-Plain Omelette & Chips, ,6.00,Omelette Dishes,true,false,false,
-Tofu/Bean Curd with Green Pepper in Black Bean Sauce, ,6.10,Tofu Dishes,true,true,false,
-Sweet & Sour Tofu/Bean Curd, ,6.10,Tofu Dishes,true,false,false,
-Tofu/Bean Curd with Ginger & Spring Onion, ,6.10,Tofu Dishes,true,false,false,
-Chips, ,3.00,Extra Portions,true,false,false,
-Salt & Pepper Chips, ,4.40,Extra Portions,true,true,false,
-Sweet & Sour Sauce,150ml,2.30,Extra Portions,true,false,false,
-Curry Sauce,150ml,2.30,Extra Portions,true,false,false,
-BBQ Sauce,150ml,2.30,Extra Portions,true,false,false,
-Black Bean Sauce,150ml,2.30,Extra Portions,true,true,false,
-Sweet Chilli Sauce,50ml,2.30,Extra Portions,true,true,false,
-Satay Sauce,50ml,2.30,Extra Portions,true,false,true,
-Soy Sauce,50ml,2.30,Extra Portions,true,false,false,
-Lamb Thai Red Curry, ,8.40,Thai Curry Dishes,false,true,false,
-Lamb Thai Green Curry, ,8.40,Thai Curry Dishes,false,true,false,
-King Prawn Thai Red Curry, ,7.80,Thai Curry Dishes,false,true,false,
-King Prawn Thai Green Curry, ,7.80,Thai Curry Dishes,false,true,false,
-Beef Thai Red Curry, ,7.20,Thai Curry Dishes,false,true,false,
-Beef Thai Green Curry, ,7.20,Thai Curry Dishes,false,true,false,
-Chicken Thai Red Curry, ,6.90,Thai Curry Dishes,false,true,false,
-Chicken Thai Green Curry, ,6.90,Thai Curry Dishes,false,true,false,
-Roast Pork Thai Red Curry, ,6.90,Thai Curry Dishes,false,true,false,
-Roast Pork Thai Green Curry, ,6.90,Thai Curry Dishes,false,true,false,
-Shrimp Thai Red Curry, ,7.20,Thai Curry Dishes,false,true,false,
-Shrimp Thai Green Curry, ,7.20,Thai Curry Dishes,false,true,false,
-Mushroom Thai Red Curry, ,6.30,Thai Curry Dishes,true,true,false,
-Mushroom Thai Green Curry, ,6.30,Thai Curry Dishes,true,true,false,
-Mixed Vegetables Thai Red Curry, ,6.30,Thai Curry Dishes,true,true,false,
-Mixed Vegetables Thai Green Curry, ,6.30,Thai Curry Dishes,true,true,false,
-Coke (Can), ,1.50,Drinks,false,false,false,
-Diet Coke (Can), ,1.50,Drinks,false,false,false,
-Tango (Can), ,1.50,Drinks,false,false,false,
-7 up (Can), ,1.50,Drinks,false,false,false,
-Bottle of Coke,1.5L,3.50,Drinks,false,false,false,
-Bottle of Diet Coke,1.5L,3.50,Drinks,false,false,false,
-Bottle of Tango,1.5L,3.50,Drinks,false,false,false,
+name,description,price,category,vegetarian,spicy,containsNuts,imageUrl,nameZh
+Mixed Hors D'Oeuvres,"Sesame Prawn on Toast, Vegetarian Mini Rolls, Spare Ribs, Satay Chicken, Crispy Seaweed",6.90,Starters,false,false,true,https://tse2.mm.bing.net/th/id/OIP.Qka7o53F5X1NG-zyfmTMwAHaCq?r=0&pid=Api&h=220&P=0,什锦前菜拼盘
+Quarter Crispy Aromatic Duck,"Served with Spring Onions, Cucumber, Pancakes (6) & Hoi Sin Sauce",11.80,Starters,false,false,false,https://tse1.mm.bing.net/th/id/OIP.xkUSpzJLERogQJPG1YSCKAHaFm?r=0&pid=Api&h=220&P=0,四分之一香酥鸭
+Half Crispy Aromatic Duck,"Served with Spring Onions, Cucumber, Pancakes (12) & Hoi Sin Sauce",18.90,Starters,false,false,false,https://tse1.mm.bing.net/th/id/OIP.xkUSpzJLERogQJPG1YSCKAHaFm?r=0&pid=Api&h=220&P=0,半只香酥鸭
+Whole Crispy Aromatic Duck,"Served with Spring Onions, Cucumber, Pancakes (24) & Hoi Sin Sauce",30.90,Starters,false,false,false,https://tse1.mm.bing.net/th/id/OIP.xkUSpzJLERogQJPG1YSCKAHaFm?r=0&pid=Api&h=220&P=0,全只香酥鸭
+Crispy Aromatic Lamb,"Served with Spring Onions, Cucumber, Pancakes (6) & Hoi Sin Sauce",11.80,Starters,false,false,false,,香酥羊肉
+Crispy Seaweed,,4.80,Starters,false,false,false,https://tse1.mm.bing.net/th/id/OIP.7C-o1D4EXTP1U7Z4mYbcngHaGE?r=0&pid=Api&h=220&P=0,香脆海藻
+Spring Rolls (2),Contains pork and shrimp,4.50,Starters,false,false,false,https://tse3.mm.bing.net/th/id/OIP.8KcpioANaDyCbQlSq2F_uQHaEJ?r=0&pid=Api&h=220&P=0,春卷(2件)
+Mixed Meat Rolls (3),,4.80,Starters,false,false,false,,什锦肉卷(3件)
+Vegetarian Mini Spring Rolls (10), ,4.50,Starters,true,false,false,https://tse3.mm.bing.net/th/id/OIP.bnn5UfOFDWu9tARq4n8G6gHaHa?r=0&pid=Api&h=220&P=0,迷你斋春卷(10件)
+Satay Chicken (4), ,6.80,Starters,false,true,true,https://tse2.mm.bing.net/th/id/OIP.Z127psyQbXyNz2bFAZkYhwHaE7?r=0&pid=Api&h=220&P=0,沙嗲鸡(4件)
+Spare Ribs with Honey Sauce, ,7.30,Starters,false,false,false,,蜜汁排骨
+Dumpling (6),,6.50,Starters,false,false,false,https://tse1.mm.bing.net/th/id/OIP.O2u58sDMQWdxX5ydT_UpDwHaE8?r=0&pid=Api&h=220&P=0,饺子(6件)
+Sesame Prawn on Toast (8), ,6.80,Starters,false,false,false,https://tse2.mm.bing.net/th/id/OIP.WnAuhLk-Ph7CYcpcC3aEJgHaHa?r=0&pid=Api&h=220&P=0,芝麻虾多士(8件)
+Captial Spare Ribs, ,7.30,Starters,false,false,false,,京都排骨
+Salt & Pepper Spare Ribs, ,7.30,Starters,false,true,false,https://tse4.mm.bing.net/th/id/OIP.1FhqTWoUtRUDVH3-mBUhnwHaE8?r=0&pid=Api&h=220&P=0,椒盐排骨
+Barbecued Spare Ribs, ,7.30,Starters,false,false,false,https://tse4.mm.bing.net/th/id/OIP.PuJypLT8z5MuzmSurKGMlwHaEK?r=0&pid=Api&h=220&P=0,烧烤排骨
+Smoked Chicken, ,6.80,Starters,false,true,false,,烟熏鸡
+Salt & Pepper Squid, ,7.50,Starters,false,true,false,,椒盐鱿鱼
+Salt & Pepper Prawns (10), ,7.50,Starters,false,true,false,https://tse4.mm.bing.net/th/id/OIP.6Zso4TM5_deZSYfoM1E5xgHaEU?r=0&pid=Api&h=220&P=0,椒盐虾(10件)
+Salt & Pepper Tofu/Bean Curd, ,6.00,Starters,true,true,false,,椒盐豆腐
+Butterfly King Prawn (8), Comes with sweet & sour sauce,7.20,Starters,false,false,false,https://tse3.mm.bing.net/th/id/OIP.rnFAVs4zlqaMHsHkWkazswHaHa?r=0&pid=Api&h=220&P=0,蝴蝶大虾(8件)
+Deep Fried Chicken Wings, ,5.90,Starters,false,true,false,,炸鸡翅
+Salt & Pepper Chicken Wings, ,5.90,Starters,false,true,false,https://tse2.mm.bing.net/th/id/OIP.b_3RWDEbpWeOrVNb_fG_4gHaHa?r=0&pid=Api&h=220&P=0,椒盐鸡翅
+Curry Samosas (10), Comes with sweet & sour sauce,4.60,Starters,false,true,false,,咖喱角(10件)
+Salt & Pepper Pork, ,6.80,Starters,false,true,false,,椒盐猪肉
+Salt & peppers Chicken, ,6.80,Starters,false,true,false,https://tse2.mm.bing.net/th/id/OIP.GgO3FzLvMWUCDD6BvtXs4AHaIq?r=0&pid=Api&h=220&P=0,椒盐鸡
+Prawn Crackers, ,2.50,Starters,false,false,false,,虾片
+Chicken & Sweetcorn Soup, ,3.80,Soups,false,false,false,https://tse3.mm.bing.net/th/id/OIP.8lUyLr7_VR-uFqAtzLUiswHaHa?r=0&pid=Api&h=220&P=0,鸡蓉粟米汤
+Crabmeat & Sweetcorn Soup, ,3.80,Soups,false,false,false,,蟹肉粟米汤
+Chicken & Noodles Soup, ,3.80,Soups,false,false,false,,鸡丝面汤
+Chicken & Mushroom Soup, ,3.80,Soups,false,false,false,,鸡菇汤
+Hot & Sour Soup, ,4.10,Soups,false,true,false,https://tse3.mm.bing.net/th/id/OIP.-Hf5M947tdRGWWCAtNQcowHaFW?r=0&pid=Api&h=220&P=0,酸辣汤
+Vegetarian Hot & Sour Soup, ,3.60,Soups,false,false,false,,斋酸辣汤
+Won Ton Soup, ,5.10,Soups,false,false,false,https://tse4.mm.bing.net/th/id/OIP.ENV2zWfeKEXqOAvzZ3BDSgHaJQ?r=0&pid=Api&h=220&P=0,云吞汤
+Roast Pork & Chicken on Boiled Rice in BBQ sauce, ,7.50,Rice Dishes (In Large Container),false,false,false,,叉烧油鸡白饭
+Roast Pork & Chicken on Fried Rice in BBQ sauce, ,7.50,Rice Dishes (In Large Container),false,false,false,,叉烧油鸡炒饭
+Roast Pork on Boiled Rice in BBQ sauce, ,7.50,Rice Dishes (In Large Container),false,false,false,,叉烧白饭
+Roast Pork on Fried Rice in BBQ sauce, ,7.50,Rice Dishes (In Large Container),false,false,false,,叉烧炒饭
+Roast Chicken on Boiled Rice in BBQ sauce, ,7.50,Rice Dishes (In Large Container),false,false,false,,油鸡白饭
+Roast Chicken on Fried Rice in BBQ sauce, ,7.50,Rice Dishes (In Large Container),false,false,false,,油鸡炒饭
+Roast Duck on Boiled Rice in BBQ sauce, ,7.90,Rice Dishes (In Large Container),false,false,false,,烧鸭白饭
+Roast Duck on Fried Rice in BBQ sauce, ,7.90,Rice Dishes (In Large Container),false,false,false,,烧鸭炒饭
+Roast Duck Fried Rice, ,7.50,Rice Dishes (In Large Container),false,false,false,,烧鸭炒饭
+House Special on Boiled Rice,in sauce,7.60,Rice Dishes (In Large Container),false,false,false,,什锦白饭
+House Special on Fried Rice,in sauce,7.60,Rice Dishes (In Large Container),false,false,false,,什锦炒饭
+Yeung Chow/Special Fried Rice, ,6.20,Rice Dishes (In Large Container),false,false,false,https://tse2.mm.bing.net/th/id/OIP.8eQ-jm0uCqJoi46bfSWMjQHaHa?r=0&pid=Api&h=220&P=0,扬州炒饭
+Thai Style Special Friend Rice, ,6.80,Rice Dishes (In Large Container),false,false,false,,泰式炒饭
+Chicken Fried Rice, ,6.10,Rice Dishes (In Large Container),false,false,false,https://tse2.mm.bing.net/th/id/OIP.I5-H59-kfmEr2qWAbLtKpAHaEg?r=0&pid=Api&h=220&P=0,鸡炒饭
+Thai Style Chicken Fried Rice, ,6.80,Rice Dishes (In Large Container),false,false,false,,泰式鸡炒饭
+Beef Fried Rice, ,6.20,Rice Dishes (In Large Container),false,false,false,,牛肉炒饭
+Thai Style Fried Rice, ,6.90,Rice Dishes (In Large Container),false,false,false,,泰式什锦炒饭
+Roast Pork Fried Rice, ,6.10,Rice Dishes (In Large Container),false,false,false,,叉烧炒饭
+Thai Style Pork Fried Rice, ,6.80,Rice Dishes (In Large Container),false,false,false,,泰式叉烧炒饭
+King Prawns Fried Rice, ,6.90,Rice Dishes (In Large Container),false,false,false,https://tse3.mm.bing.net/th/id/OIP.uga9UvBejz9EdZXXzc24sAHaEg?r=0&pid=Api&h=220&P=0,大虾炒饭
+Thai Style King Prawn Fried Rice, ,7.40,Rice Dishes (In Large Container),false,false,false,,泰式大虾炒饭
+Shrimp Fried Rice, ,6.50,Rice Dishes (In Large Container),false,false,false,,虾仁炒饭
+Singapore Style Fried Rice, ,6.90,Rice Dishes (In Large Container),false,true,false,https://tse2.mm.bing.net/th/id/OIP.nZoaMeBN9TpeYuEyaecUVgHaE8?r=0&pid=Api&h=220&P=0,星洲炒饭
+Egg Fried Rice,Large,4.90,Rice Dishes (In Large Container),true,false,false,https://tse4.mm.bing.net/th/id/OIP.Bt9cV7AspDgCzAQmSK0hpgHaHa?r=0&pid=Api&h=220&P=0,蛋炒饭
+Egg Fried Rice,Small,4.30,Rice Dishes (In Large Container),true,false,false,https://tse4.mm.bing.net/th/id/OIP.Bt9cV7AspDgCzAQmSK0hpgHaHa?r=0&pid=Api&h=220&P=0,蛋炒饭
+Thai Style Egg Fried Rice, ,5.80,Rice Dishes (In Large Container),true,false,false,,泰式蛋炒饭
+Mixed Vegetables on Boiled Rice, Comes in sauce,6.70,Rice Dishes (In Large Container),true,false,false,,杂菜白饭
+Mixed Vegetables on Fried Rice, Comes in sauce,6.70,Rice Dishes (In Large Container),false,false,false,,杂菜炒饭
+Boiled Rice,Small,4.30,Rice Dishes (In Large Container),true,false,false,,白饭
+Pineapple Fried Rice, ,5.50,Rice Dishes (In Large Container),true,false,false,,菠萝炒饭
+Chicken & Pineapple Fried Rice, ,6.50,Rice Dishes (In Large Container),false,false,false,,鸡肉菠萝炒饭
+Beef & Pineapple Fried Rice, ,6.50,Rice Dishes (In Large Container),false,false,false,,牛肉菠萝炒饭
+Roast Pork & Pineapple Fried Rice, ,6.50,Rice Dishes (In Large Container),false,false,false,,叉烧菠萝炒饭
+King Prawn & Pineapple Fried Rice, ,7.10,Rice Dishes (In Large Container),false,false,false,,大虾菠萝炒饭
+Shrip & Pineapple Fried Rice, ,6.80,Rice Dishes (In Large Container),false,false,false,,虾仁菠萝炒饭
+Roast Pork & Chicken on ChowMein in BBQ sauce, ,7.50,Noodles Dishes (In Large Container),false,false,false,,叉烧油鸡炒面
+Roast Pork on ChowMein in BBQ sauce, ,7.50,Noodles Dishes (In Large Container),false,false,false,,叉烧炒面
+Chicken on ChowMein in BBQ sauce, ,7.50,Noodles Dishes (In Large Container),false,false,false,,油鸡炒面
+Roast Duck on ChowMein in BBQ sauce, ,7.90,Noodles Dishes (In Large Container),false,false,false,,烧鸭炒面
+Roast Duck ChowMein, ,7.50,Noodles Dishes (In Large Container),false,false,false,,烧鸭炒面
+House Special on ChowMein,in sauce,7.80,Noodles Dishes (In Large Container),false,false,false,,什锦炒面
+Yeung Chow/Special ChowMein, ,6.40,Noodles Dishes (In Large Container),false,false,false,https://tse4.mm.bing.net/th/id/OIP.1bVnbmpUXVD6covM87CBWAHaHZ?r=0&pid=Api&h=220&P=0,扬州炒面
+Chicken ChowMein, ,6.20,Noodles Dishes (In Large Container),false,false,false,https://tse4.mm.bing.net/th/id/OIP.hlKAnIV_JOydfTzXE41pagHaLH?r=0&pid=Api&h=220&P=0,鸡炒面
+Beef ChowMein, ,6.30,Noodles Dishes (In Large Container),false,false,false,,牛肉炒面
+Roast Pork ChowMein, ,6.20,Noodles Dishes (In Large Container),false,false,false,,叉烧炒面
+King Prawn ChowMein, ,7.20,Noodles Dishes (In Large Container),false,false,false,https://tse1.mm.bing.net/th/id/OIP.l1S8kJtrTMgzE0oze2sS5AHaE8?r=0&pid=Api&h=220&P=0,大虾炒面
+Shrimp ChowMein, ,6.50,Noodles Dishes (In Large Container),false,false,false,,虾仁炒面
+Singapore Style ChowMein, ,6.80,Noodles Dishes (In Large Container),false,true,false,,星洲炒面
+Beansprouts ChowMein, ,5.10,Noodles Dishes (In Large Container),true,false,false,,豆芽炒面
+Plain ChowMein, ,5.10,Noodles Dishes (In Large Container),false,true,false,,净炒面
+Mushrooms ChowMein, ,5.50,Noodles Dishes (In Large Container),false,true,false,,蘑菇炒面
+Mixed Vegetables on ChowMein,in sauce,5.50,Noodles Dishes (In Large Container),false,true,false,,杂菜炒面
+Singapore Style Fried Rice Noodles/Vermicelli, ,6.80,Noodles Dishes (In Large Container),true,false,false,https://tse1.mm.bing.net/th/id/OIP.MHzv5ZZ_owQK3L0y3ren9AHaFj?r=0&pid=Api&h=220&P=0,星洲炒米粉
+Chicken Singapore Style Friend Rice Noodles/Vermicelli, ,6.80,Noodles Dishes (In Large Container),true,false,false,,鸡肉星洲炒米粉
+Vegetarian Singapore Style Fried Rice Noodles/Vermicelli, ,6.30,Noodles Dishes (In Large Container),true,true,false,,斋星洲炒米粉
+Seafood ChowMein,in sauce,7.90,Noodles Dishes (In Large Container),false,false,false,,海鲜炒面
+Crispy Noodles with Chicken in Black Bean Sauce, ,7.90,Noodles Dishes (In Large Container),false,true,false,,豉汁鸡香脆面
+Crispy Noodles with Beef in Black Bean Sauce, ,7.90,Noodles Dishes (In Large Container),false,true,false,,豉汁牛肉香脆面
+Crispy Noodles with Roast Duck in Black Bean Sauce, ,8.20,Noodles Dishes (In Large Container),false,true,false,,豉汁烧鸭香脆面
+Crispy Noodles with Mixed Vegetables in Black Bean Sauce, ,7.10,Noodles Dishes (In Large Container),true,true,false,,豉汁杂菜香脆面
+Seafood Fried Ho Fun, ,8.90,Noodles Dishes (In Large Container),false,false,false,,海鲜炒河粉
+Singapore Style Fried Ho Fun, ,8.50,Noodles Dishes (In Large Container),false,true,false,,星洲炒河粉
+Chicken Fried Ho Fun, ,8.30,Noodles Dishes (In Large Container),false,false,false,,鸡肉炒河粉
+Beef Fried Ho Fun, ,8.50,Noodles Dishes (In Large Container),false,false,false,,牛肉炒河粉
+Ho Fun with CHicken in Black Bean Sauce, ,8.50,Noodles Dishes (In Large Container),false,true,false,,豉汁鸡河粉
+Ho Fun with Beef in Black Bean Sauce, ,8.70,Noodles Dishes (In Large Container),false,true,false,,豉汁牛肉河粉
+Ho Fun with Roast Duck in Black Bean Sauce, ,8.90,Noodles Dishes (In Large Container),false,true,false,,豉汁烧鸭河粉
+Satay Yeung Chow/Special ChowMein, ,6.80,Noodles Dishes (In Large Container),false,true,true,,沙嗲扬州炒面
+Satay Chicken ChowMein, ,6.60,Noodles Dishes (In Large Container),false,true,true,,沙嗲鸡炒面
+Satay Beef ChowMein, ,6.80,Noodles Dishes (In Large Container),false,true,true,,沙嗲牛肉炒面
+Satay Roast Pork ChowMein, ,6.80,Noodles Dishes (In Large Container),false,true,true,,沙嗲叉烧炒面
+Satay King Prawn ChowMein, ,7.50,Noodles Dishes (In Large Container),false,true,true,,沙嗲大虾炒面
+Satay Shrimp ChowMein, ,7.20,Noodles Dishes (In Large Container),false,true,true,,沙嗲虾仁炒面
+Satay Beansprouts ChowMein, ,5.80,Noodles Dishes (In Large Container),true,true,true,,沙嗲豆芽炒面
+Satay Mushroom ChowMein, ,5.90,Noodles Dishes (In Large Container),true,true,true,,沙嗲蘑菇炒面
+Chinese Style Chicken, ,6.80,Chicken Dishes,false,false,false,,中式鸡
+Chicken with Mushroom, ,6.80,Chicken Dishes,false,false,false,https://tse4.mm.bing.net/th/id/OIP.CdM1nr-yl_rrk3I4RZCk5AHaHa?r=0&pid=Api&h=220&P=0,蘑菇鸡
+Chicken with Bamboo Shoots & Water Chestnuts, ,6.80,Chicken Dishes,false,false,false,,竹笋马蹄鸡
+Chicken with Pineapple, ,6.80,Chicken Dishes,false,false,false,,菠萝鸡
+Chicken with Mixed Vegetables, ,6.80,Chicken Dishes,false,false,false,,杂菜鸡
+Chicken Chop Suey, ,6.80,Chicken Dishes,false,false,false,,鸡肉杂碎
+Chicken with Cashew Nuts, ,7.00,Chicken Dishes,false,false,true,,腰果鸡
+Chicken with Green Ppepper in Black Bean Sauce, ,6.80,Chicken Dishes,false,true,false,https://tse3.mm.bing.net/th/id/OIP.73gBad_D3vtCtxyFswhFfAHaE-?r=0&pid=Api&h=220&P=0,豉汁青椒鸡
+Szechuan Style Chicken, ,6.80,Chicken Dishes,false,true,false,,四川鸡
+Chicken in Oyster Sauce, ,6.80,Chicken Dishes,false,false,false,,蚝油鸡
+Chicken in Garlic Sauce, ,7.10,Chicken Dishes,false,false,false,,蒜香鸡
+Satay Chicken, ,6.80,Chicken Dishes,false,true,true,,沙嗲鸡
+Chicken with Ginger & Spring Onion, ,6.80,Chicken Dishes,false,false,false,,姜葱鸡
+Chicken in Yellow Bean Sauce, ,6.80,Chicken Dishes,false,false,true,,面豉鸡
+Thai Style Chicken, ,7.10,Chicken Dishes,false,true,false,,泰式鸡
+Chicken in Black Pepper Sauce, ,6.80,Chicken Dishes,false,true,false,,黑椒鸡
+Kung Po Chicken, ,6.90,Chicken Dishes,false,true,true,https://tse2.mm.bing.net/th/id/OIP.y_HcCgYFpFH-j9ohd_2f8QHaE8?r=0&pid=Api&h=220&P=0,宫保鸡
+Crispy Shredded Chicken, ,6.90,Chicken Dishes,false,true,false,https://tse4.mm.bing.net/th/id/OIP.EbWRoAQ9nSkEFfVxjwE2wwHaHa?r=0&pid=Api&h=220&P=0,香酥鸡丝
+Crispy Shredded Beef, ,7.40,Beef Dishes,false,true,false,https://tse2.mm.bing.net/th/id/OIP.UI8mRy1hBLO2h7waRdm5fgHaEy?r=0&pid=Api&h=220&P=0,香酥牛肉丝
+Beef with Mushroom, ,7.10,Beef Dishes,false,false,false,,蘑菇牛肉
+Beef with Bamboo Shoots & Water Chestnuts, ,7.10,Beef Dishes,false,false,false,,竹笋马蹄牛肉
+Beef with Pineapple, ,7.10,Beef Dishes,false,false,false,,菠萝牛肉
+Beef with Green Pepper in Black Bean Sauce, ,7.10,Beef Dishes,false,true,false,https://tse3.mm.bing.net/th/id/OIP.yJgJmhpkRmmTLndS4IcV8wHaHa?r=0&pid=Api&h=220&P=0,豉汁青椒牛肉
+Beef Chop Suey, ,7.10,Beef Dishes,false,false,false,,牛肉杂碎
+Szechuan Style Beef, ,7.10,Beef Dishes,false,true,false,,四川牛肉
+Satay Beef, ,7.10,Beef Dishes,false,true,true,,沙嗲牛肉
+Beef with Mixed Vegetables, ,7.10,Beef Dishes,false,false,false,,杂菜牛肉
+Beef with Cashew Nuts, ,7.30,Beef Dishes,false,false,true,,腰果牛肉
+Beef with Ginger & Spring Onion, ,7.10,Beef Dishes,false,false,false,,姜葱牛肉
+Thai Style Beef, ,7.10,Beef Dishes,false,false,true,,泰式牛肉
+Beef in Black Pepper Sauce, ,7.10,Beef Dishes,false,false,true,,黑椒牛肉
+Beef in Oyster Sauce, ,7.10,Beef Dishes,false,false,false,,蚝油牛肉
+Mixed Meat with Green Peppers in Black Bean Sauce, ,7.60,Seafood Dishes,false,true,false,,豉汁青椒什锦肉
+King Prawn in Peking Sauce, ,7.60,Seafood Dishes,false,true,false,,北京汁大虾
+King Prawn with Cashew Nuts, ,7.60,Seafood Dishes,false,false,true,,腰果大虾
+King Prawn in Garlic Sauce, ,7.10,Seafood Dishes,false,false,false,,蒜香大虾
+Kung Po King Prawn, ,7.60,Seafood Dishes,false,true,true,https://tse3.mm.bing.net/th/id/OIP.zhOqbdYA4rRWKpBDA5blGQHaHa?r=0&pid=Api&h=220&P=0,宫保大虾
+King Prawn with Green Pepper in Black Bean Sauce, ,7.60,Seafood Dishes,false,true,false,,豉汁青椒大虾
+Satay King Prawn, ,7.60,Seafood Dishes,false,true,true,,沙嗲大虾
+King Prawn with Pineapple, ,7.60,Seafood Dishes,false,false,false,,菠萝大虾
+Szechuan Style King Prawn, ,7.60,Seafood Dishes,false,true,false,,四川大虾
+King Prawn with Bamboo Shoot & Water Chestnuts, ,7.60,Seafood Dishes,false,false,false,,竹笋马蹄大虾
+King Prawn with Mushroom, ,7.60,Seafood Dishes,false,false,false,,蘑菇大虾
+King Prawn with Mixed Vegetables, ,7.60,Seafood Dishes,false,false,false,,杂菜大虾
+King Prawn Chop Suey, ,7.60,Seafood Dishes,false,false,false,,大虾杂碎
+King Prawn in Yellow Bean Sauce, ,7.60,Seafood Dishes,false,true,false,,面豉大虾
+King Prawn in Oyster Sauce, ,7.60,Seafood Dishes,false,false,false,,蚝油大虾
+King Prawn with Ginger & Spring Onion, ,7.60,Seafood Dishes,false,false,false,,姜葱大虾
+Thai Style King Prawn, ,7.90,Seafood Dishes,false,true,false,,泰式大虾
+King Prawn in Coconut Sauce, ,7.90,Seafood Dishes,false,false,false,,椰汁大虾
+Thai Style Seafood, ,8.70,Seafood Dishes,false,false,false,,泰式海鲜
+Chinese Style Roast Pork, ,6.80,Pork Dishes,false,false,false,,中式叉烧
+Roast Pork with Green Pepper in Black Bean Sauce, ,6.80,Pork Dishes,false,true,false,https://tse1.mm.bing.net/th/id/OIP.hr9uwhH1ybLgWKS0xBkNzwHaLH?r=0&pid=Api&h=220&P=0,豉汁青椒叉烧
+Roast Pork in Yellow Bean Sauce, ,7.10,Pork Dishes,false,false,true,,面豉叉烧
+Roast Pork with Mixed Vegetables, ,6.80,Pork Dishes,false,false,false,,杂菜叉烧
+Roast Pork Chop Suey, ,6.80,Pork Dishes,false,false,false,,叉烧杂碎
+Roast Pork with Ginger & Spring Onion, ,6.80,Pork Dishes,false,false,false,,姜葱叉烧
+Roast Pork in Coconut Sauce, ,6.80,Pork Dishes,false,false,false,,椰汁叉烧
+Kung Po Pork, ,6.80,Pork Dishes,false,true,true,,宫保猪肉
+Lamb with Ginger & Spring Onion, ,8.40,Lamb Dishes,false,false,false,,姜葱羊肉
+Lamb with Green Pepper in Black Bean Sauce, ,8.40,Lamb Dishes,false,true,false,,豉汁青椒羊肉
+Lamb in Black Pepper Sauce, ,8.40,Lamb Dishes,false,true,false,,黑椒羊肉
+Lamb in Oyster Sauce, ,8.40,Lamb Dishes,false,false,false,,蚝油羊肉
+Szechuan Style Lamb, ,8.40,Lamb Dishes,false,true,false,,四川羊肉
+Special Curry, ,7.50,Curry Dishes,false,true,false,,特色咖喱
+Chicken Curry, ,6.60,Curry Dishes,false,true,false,https://tse2.mm.bing.net/th/id/OIP.iBmINMP0cOiqf69rGoP50QHaHa?r=0&pid=Api&h=220&P=0,咖喱鸡
+Beef Curry, ,6.80,Curry Dishes,false,true,false,https://tse1.mm.bing.net/th/id/OIP.fCQRcC5bEhKOR3GZTKU1MwHaE7?r=0&pid=Api&h=220&P=0,咖喱牛肉
+Roast Pork Curry, ,6.60,Curry Dishes,false,true,false,,咖喱叉烧
+Lamb Curry, ,8.30,Curry Dishes,false,true,false,,咖喱羊肉
+King Prawn Curry, ,7.60,Curry Dishes,false,true,false,https://tse1.mm.bing.net/th/id/OIP.bfj4qGTyXY2IGmGcLk_lNwHaHa?r=0&pid=Api&h=220&P=0,咖喱大虾
+Mixed Vegetables Curry, ,6.10,Curry Dishes,false,true,false,,咖喱杂菜
+Roast Duck Curry, ,8.20,Curry Dishes,false,true,false,,咖喱烧鸭
+Sweet & Sour Chicken Balls, ,6.60,Sweet & Sour Dishes,false,false,false,https://tse1.mm.bing.net/th/id/OIP.vm5GUHXcb-qhdVNdHvDNLwHaHa?r=0&pid=Api&h=220&P=0,甜酸鸡球
+Sweet & Sour Pork Balls, ,6.60,Sweet & Sour Dishes,false,false,false,https://tse2.mm.bing.net/th/id/OIP.JFBM-kwFSUvOaJO6xZEOiQHaE8?r=0&pid=Api&h=220&P=0,甜酸猪肉球
+Sweet & Sour Prawn Balls, ,7.50,Sweet & Sour Dishes,false,false,false,https://tse1.mm.bing.net/th/id/OIP.3MBgzXnPIamON-mHEtLULQAAAA?r=0&pid=Api&h=220&P=0,甜酸虾球
+Sweet & Sour Chicken HongKong Style, ,6.80,Sweet & Sour Dishes,false,false,false,https://tse1.mm.bing.net/th/id/OIP.DQYb6ObD4iMoFsAembRGfwHaHa?r=0&pid=Api&h=220&P=0,港式甜酸鸡
+Sweet & Sour Pork HongKong Style, ,6.80,Sweet & Sour Dishes,false,false,false,https://tse1.mm.bing.net/th/id/OIP.DQYb6ObD4iMoFsAembRGfwHaHa?r=0&pid=Api&h=220&P=0,港式甜酸猪肉
+Sweet & Sour King Prawn HongKong Style, ,7.60,Sweet & Sour Dishes,false,false,false,https://tse3.mm.bing.net/th/id/OIP.Cb7bk9TnJwxGKm2ZpjVekgHaE7?r=0&pid=Api&h=220&P=0,港式甜酸大虾
+Sweet & Sour Fish HongKong Style, ,6.80,Sweet & Sour Dishes,false,false,false,,港式甜酸鱼
+Crispy Chicken, ,6.80,Sweet & Sour Dishes,false,true,false,,香脆鸡
+Crispy Pork, ,6.80,Sweet & Sour Dishes,false,true,false,,香脆猪肉
+Lemon Chicken, ,7.10,Sweet & Sour Dishes,false,false,false,,柠檬鸡
+Duck with Plum Sauce, ,8.20,Duck Dishes,false,false,false,,梅酱鸭
+Chinese Style Duck, ,8.20,Duck Dishes,false,false,false,,中式鸭
+Roast Duck with Pineapple, ,8.20,Duck Dishes,false,false,false,,菠萝烧鸭
+Roast Duck in Garlic Sauce, ,8.20,Duck Dishes,false,false,false,,蒜香烧鸭
+Roast Duck with Ginger & Spring Onion, ,8.20,Duck Dishes,false,false,false,,姜葱烧鸭
+Roast Duck with Green Pepper in Black Bean Sauce, ,8.20,Duck Dishes,false,true,false,,豉汁青椒烧鸭
+Stir Fried Mixed Vegetables, ,5.60,Vegetarian Dishes,true,false,false,https://tse4.mm.bing.net/th/id/OIP.hYwWlcovcekFBrVjmolmwQHaE8?r=0&pid=Api&h=220&P=0,炒杂菜
+Fried Mushroom, ,5.60,Vegetarian Dishes,true,false,false,,炒蘑菇
+Mixed Vegetables in Black Bean Sauce, ,5.60,Vegetarian Dishes,true,true,false,,豉汁杂菜
+Fried Bamboo Shoot & Water Chestnuts, ,5.60,Vegetarian Dishes,true,false,false,,炒竹笋马蹄
+Fried Beansprouts, ,5.10,Vegetarian Dishes,true,false,false,,炒豆芽
+Szechuan Style Mixed Vegetables, ,5.80,Vegetarian Dishes,true,true,false,,四川杂菜
+Mixed Vegetables in Yellow Bean Sauce, ,5.60,Vegetarian Dishes,true,false,true,,面豉杂菜
+Mixed Vegetables with Cashew Nuts, ,6.10,Vegetarian Dishes,true,false,true,,腰果杂菜
+Broccoli with Garlic, ,6.10,Vegetarian Dishes,true,false,false,https://tse3.mm.bing.net/th/id/OIP.MsQLTyO5BMd28XFFvKgM7AHaHa?r=0&pid=Api&h=220&P=0,蒜香西兰花
+Chicken Omelette & Chips, ,6.80,Omelette Dishes,false,false,false,,鸡肉蛋饼薯条
+Roast Pork Omelette & Chips, ,6.80,Omelette Dishes,false,false,false,,叉烧蛋饼薯条
+King Prawn Omelette & Chips, ,7.50,Omelette Dishes,false,false,false,,大虾蛋饼薯条
+Mushroom Omelette & Chips, ,6.20,Omelette Dishes,false,false,false,,蘑菇蛋饼薯条
+Plain Omelette & Chips, ,6.00,Omelette Dishes,true,false,false,,原味蛋饼薯条
+Tofu/Bean Curd with Green Pepper in Black Bean Sauce, ,6.10,Tofu Dishes,true,true,false,,豉汁青椒豆腐
+Sweet & Sour Tofu/Bean Curd, ,6.10,Tofu Dishes,true,false,false,,甜酸豆腐
+Tofu/Bean Curd with Ginger & Spring Onion, ,6.10,Tofu Dishes,true,false,false,,姜葱豆腐
+Chips, ,3.00,Extra Portions,true,false,false,https://tse3.mm.bing.net/th/id/OIP.U59IRbXNH9CgmzM38ubjTQHaE8?r=0&pid=Api&h=220&P=0,薯条
+Salt & Pepper Chips, ,4.40,Extra Portions,true,true,false,https://tse2.mm.bing.net/th/id/OIP.3BzMWZtQwBFoaQWVMdFCOQHaHa?r=0&pid=Api&h=220&P=0,椒盐薯条
+Sweet & Sour Sauce,150ml,2.30,Extra Portions,true,false,false,https://tse3.mm.bing.net/th/id/OIP.s2IZS24e8IM8YRbL1SnTWgHaEI?r=0&pid=Api&h=220&P=0,甜酸汁
+Curry Sauce,150ml,2.30,Extra Portions,true,false,false,https://tse2.mm.bing.net/th/id/OIP.eKC4r_YfNQuUsNa1tuuFkwHaHa?r=0&pid=Api&h=220&P=0,咖喱汁
+BBQ Sauce,150ml,2.30,Extra Portions,true,false,false,https://tse3.mm.bing.net/th/id/OIP.905pb1-gLsyCVMTsjp5RvgHaHa?r=0&pid=Api&h=220&P=0,烧烤汁
+Black Bean Sauce,150ml,2.30,Extra Portions,true,true,false,,豉汁
+Sweet Chilli Sauce,50ml,2.30,Extra Portions,true,true,false,,甜辣酱
+Satay Sauce,50ml,2.30,Extra Portions,true,false,true,,沙嗲酱
+Soy Sauce,50ml,2.30,Extra Portions,true,false,false,,酱油
+Lamb Thai Red Curry, ,8.40,Thai Curry Dishes,false,true,false,,泰式红咖喱羊肉
+Lamb Thai Green Curry, ,8.40,Thai Curry Dishes,false,true,false,,泰式青咖喱羊肉
+King Prawn Thai Red Curry, ,7.80,Thai Curry Dishes,false,true,false,,泰式红咖喱大虾
+King Prawn Thai Green Curry, ,7.80,Thai Curry Dishes,false,true,false,,泰式青咖喱大虾
+Beef Thai Red Curry, ,7.20,Thai Curry Dishes,false,true,false,,泰式红咖喱牛肉
+Beef Thai Green Curry, ,7.20,Thai Curry Dishes,false,true,false,,泰式青咖喱牛肉
+Chicken Thai Red Curry, ,6.90,Thai Curry Dishes,false,true,false,,泰式红咖喱鸡
+Chicken Thai Green Curry, ,6.90,Thai Curry Dishes,false,true,false,,泰式青咖喱鸡
+Roast Pork Thai Red Curry, ,6.90,Thai Curry Dishes,false,true,false,,泰式红咖喱叉烧
+Roast Pork Thai Green Curry, ,6.90,Thai Curry Dishes,false,true,false,,泰式青咖喱叉烧
+Shrimp Thai Red Curry, ,7.20,Thai Curry Dishes,false,true,false,,泰式红咖喱虾仁
+Shrimp Thai Green Curry, ,7.20,Thai Curry Dishes,false,true,false,,泰式青咖喱虾仁
+Mushroom Thai Red Curry, ,6.30,Thai Curry Dishes,true,true,false,,泰式红咖喱蘑菇
+Mushroom Thai Green Curry, ,6.30,Thai Curry Dishes,true,true,false,,泰式青咖喱蘑菇
+Mixed Vegetables Thai Red Curry, ,6.30,Thai Curry Dishes,true,true,false,,泰式红咖喱杂菜
+Mixed Vegetables Thai Green Curry, ,6.30,Thai Curry Dishes,true,true,false,,泰式青咖喱杂菜
+Coke (Can), ,1.50,Drinks,false,false,false,,可乐(罐)
+Diet Coke (Can), ,1.50,Drinks,false,false,false,,健怡可乐(罐)
+Tango (Can), ,1.50,Drinks,false,false,false,,橙汁汽水(罐)
+7 up (Can), ,1.50,Drinks,false,false,false,,七喜(罐)
+Bottle of Coke,1.5L,3.50,Drinks,false,false,false,,可乐(樽)
+Bottle of Diet Coke,1.5L,3.50,Drinks,false,false,false,,健怡可乐(樽)
+Bottle of Tango,1.5L,3.50,Drinks,false,false,false,,橙汁汽水(樽)

@@ -27,6 +27,8 @@ public class MenuItem {
 
     private String imageUrl;
 
+    private String nameZh;
+
     protected MenuItem() {}
 
     public MenuItem(String name, String description, BigDecimal price, Category category) {
@@ -46,8 +48,10 @@ public class MenuItem {
     public boolean isSpicy() { return spicy; }
     public boolean isContainsNuts() { return containsNuts; }
     public String getImageUrl() { return imageUrl; }
+    public String getNameZh() { return nameZh; }
 
     public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
+    public void setNameZh(String nameZh) { this.nameZh = nameZh; }
     public void setName(String name) { this.name = name; }
     public void setDescription(String description) { this.description = description; }
     public void setPrice(BigDecimal price) { this.price = price; }
