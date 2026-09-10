@@ -27,6 +27,9 @@ public class OrderItem {
     private int quantity;
     private BigDecimal priceAtOrder;
     private String note;
+
+    // nvarchar: see MenuItem.nameZh for why plain varchar can't hold Chinese.
+    @Column(columnDefinition = "nvarchar(255)")
     private String noteZh;
 
     @OneToMany(mappedBy = "orderItem", cascade = CascadeType.ALL, orphanRemoval = true)

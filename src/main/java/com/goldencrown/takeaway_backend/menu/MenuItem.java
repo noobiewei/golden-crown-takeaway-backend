@@ -27,6 +27,10 @@ public class MenuItem {
 
     private String imageUrl;
 
+    // nvarchar, not the Hibernate default varchar: SQL Server's default
+    // collation can't represent Chinese characters in varchar and silently
+    // replaces them with '?' at write time.
+    @Column(columnDefinition = "nvarchar(255)")
     private String nameZh;
 
     protected MenuItem() {}

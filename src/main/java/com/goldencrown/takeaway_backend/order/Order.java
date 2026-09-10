@@ -26,7 +26,8 @@ public class Order {
     @Column(length = 1000)
     private String specialInstructions;
 
-    @Column(length = 1000)
+    // nvarchar: see MenuItem.nameZh for why plain varchar can't hold Chinese.
+    @Column(columnDefinition = "nvarchar(1000)")
     private String specialInstructionsZh;
 
     private BigDecimal deliveryFee = BigDecimal.ZERO;

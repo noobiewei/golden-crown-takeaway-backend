@@ -18,7 +18,11 @@ public class OrderItemExtra {
     private OrderItem orderItem;
 
     private String name;
+
+    // nvarchar: see MenuItem.nameZh for why plain varchar can't hold Chinese.
+    @Column(columnDefinition = "nvarchar(255)")
     private String nameZh;
+
     private BigDecimal priceAtOrder;
 
     protected OrderItemExtra() {}
