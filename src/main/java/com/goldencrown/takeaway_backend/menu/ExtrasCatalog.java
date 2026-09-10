@@ -52,6 +52,7 @@ public final class ExtrasCatalog {
             new DishExtra("Extra Prawn", new BigDecimal("2.00"), "加虾"),
             new DishExtra("Extra Shrimp", new BigDecimal("1.00"), "加虾仁"),
             new DishExtra("Extra Duck", new BigDecimal("2.00"), "加鸭肉"),
+            new DishExtra("Extra Egg", new BigDecimal("1.00"), "加蛋"),
             new DishExtra("Extra peas", new BigDecimal("0.30"), "加豌豆"),
             new DishExtra("Extra Spicy", new BigDecimal("0.30"), "加辣"),
             new DishExtra("Extra Spicy with Chilli Oil", new BigDecimal("0.50"), "加辣椒油"),
