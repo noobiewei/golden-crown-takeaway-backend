@@ -4,6 +4,7 @@ import com.goldencrown.takeaway_backend.menu.DishExtra;
 import com.goldencrown.takeaway_backend.menu.ExtrasCatalog;
 import com.goldencrown.takeaway_backend.menu.MenuItem;
 import com.goldencrown.takeaway_backend.menu.MenuItemRepository;
+import com.goldencrown.takeaway_backend.push.PushNotificationService;
 import com.stripe.exception.StripeException;
 import com.stripe.model.checkout.Session;
 import com.stripe.param.checkout.SessionCreateParams;
@@ -43,10 +44,15 @@ public class OrderController {
 
     private final OrderRepository orderRepository;
     private final MenuItemRepository menuItemRepository;
+    private final PushNotificationService pushNotificationService;
 
-    public OrderController(OrderRepository orderRepository, MenuItemRepository menuItemRepository) {
+    public OrderController(
+            OrderRepository orderRepository,
+            MenuItemRepository menuItemRepository,
+            PushNotificationService pushNotificationService) {
         this.orderRepository = orderRepository;
         this.menuItemRepository = menuItemRepository;
+        this.pushNotificationService = pushNotificationService;
     }
 
     @PostMapping
@@ -111,6 +117,7 @@ public class OrderController {
         }
 
         order = orderRepository.save(order);
+        pushNotificationService.notifyNewOrder(order.getId(), order.getCustomerName());
 
         if (request.paymentMethod() == PaymentMethod.CASH) {
             order.setOrderToken(UUID.randomUUID().toString());
