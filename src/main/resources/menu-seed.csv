@@ -25,6 +25,8 @@ Salt & Pepper Chicken Wings, ,5.90,Starters,false,true,false,https://tse2.mm.bin
 Curry Samosas (10), Comes with curry sauce,4.60,Starters,false,true,false,,咖喱角(10件)
 Salt & Pepper Pork, ,6.80,Starters,false,true,false,,椒盐猪肉
 Salt & peppers Chicken, ,6.80,Starters,false,true,false,https://tse2.mm.bing.net/th/id/OIP.GgO3FzLvMWUCDD6BvtXs4AHaIq?r=0&pid=Api&h=220&P=0,椒盐鸡
+Chips, ,3.00,Starters,true,false,false,https://tse3.mm.bing.net/th/id/OIP.U59IRbXNH9CgmzM38ubjTQHaE8?r=0&pid=Api&h=220&P=0,薯条
+Salt & Pepper Chips, ,4.40,Starters,true,true,false,https://tse2.mm.bing.net/th/id/OIP.3BzMWZtQwBFoaQWVMdFCOQHaHa?r=0&pid=Api&h=220&P=0,椒盐薯条
 Prawn Crackers, ,2.50,Starters,false,false,false,,虾片
 Chicken & Sweetcorn Soup, ,3.80,Soups,false,false,false,https://tse3.mm.bing.net/th/id/OIP.8lUyLr7_VR-uFqAtzLUiswHaHa?r=0&pid=Api&h=220&P=0,鸡蓉粟米汤
 Crabmeat & Sweetcorn Soup, ,3.80,Soups,false,false,false,,蟹肉粟米汤
@@ -213,15 +215,15 @@ Plain Omelette & Chips, ,6.00,Omelette Dishes,true,false,false,,原味蛋饼薯�
 Tofu/Bean Curd with Green Pepper in Black Bean Sauce, ,6.10,Tofu Dishes,true,true,false,,豉汁青椒豆腐
 Sweet & Sour Tofu/Bean Curd, ,6.10,Tofu Dishes,true,false,false,,甜酸豆腐
 Tofu/Bean Curd with Ginger & Spring Onion, ,6.10,Tofu Dishes,true,false,false,,姜葱豆腐
-Chips, ,3.00,Extra Portions,true,false,false,https://tse3.mm.bing.net/th/id/OIP.U59IRbXNH9CgmzM38ubjTQHaE8?r=0&pid=Api&h=220&P=0,薯条
-Salt & Pepper Chips, ,4.40,Extra Portions,true,true,false,https://tse2.mm.bing.net/th/id/OIP.3BzMWZtQwBFoaQWVMdFCOQHaHa?r=0&pid=Api&h=220&P=0,椒盐薯条
-Sweet & Sour Sauce,150ml,2.30,Extra Portions,true,false,false,https://tse3.mm.bing.net/th/id/OIP.s2IZS24e8IM8YRbL1SnTWgHaEI?r=0&pid=Api&h=220&P=0,甜酸汁
-Curry Sauce,150ml,2.30,Extra Portions,true,false,false,https://tse2.mm.bing.net/th/id/OIP.eKC4r_YfNQuUsNa1tuuFkwHaHa?r=0&pid=Api&h=220&P=0,咖喱汁
-BBQ Sauce,150ml,2.30,Extra Portions,true,false,false,https://tse3.mm.bing.net/th/id/OIP.905pb1-gLsyCVMTsjp5RvgHaHa?r=0&pid=Api&h=220&P=0,烧烤汁
-Black Bean Sauce,150ml,2.30,Extra Portions,true,true,false,,豉汁
-Sweet Chilli Sauce,50ml,2.30,Extra Portions,true,true,false,,甜辣酱
-Satay Sauce,50ml,2.30,Extra Portions,true,false,true,,沙嗲酱
-Soy Sauce,50ml,2.30,Extra Portions,true,false,false,,酱油
+Chips, ,3.00,Sauces,true,false,false,https://tse3.mm.bing.net/th/id/OIP.U59IRbXNH9CgmzM38ubjTQHaE8?r=0&pid=Api&h=220&P=0,薯条
+Salt & Pepper Chips, ,4.40,Sauces,true,true,false,https://tse2.mm.bing.net/th/id/OIP.3BzMWZtQwBFoaQWVMdFCOQHaHa?r=0&pid=Api&h=220&P=0,椒盐薯条
+Sweet & Sour Sauce,150ml,2.30,Sauces,true,false,false,https://tse3.mm.bing.net/th/id/OIP.s2IZS24e8IM8YRbL1SnTWgHaEI?r=0&pid=Api&h=220&P=0,甜酸汁
+Curry Sauce,150ml,2.30,Sauces,true,false,false,https://tse2.mm.bing.net/th/id/OIP.eKC4r_YfNQuUsNa1tuuFkwHaHa?r=0&pid=Api&h=220&P=0,咖喱汁
+BBQ Sauce,150ml,2.30,Sauces,true,false,false,https://tse3.mm.bing.net/th/id/OIP.905pb1-gLsyCVMTsjp5RvgHaHa?r=0&pid=Api&h=220&P=0,烧烤汁
+Black Bean Sauce,150ml,2.30,Sauces,true,true,false,,豉汁
+Sweet Chilli Sauce,50ml,2.30,Sauces,true,true,false,,甜辣酱
+Satay Sauce,50ml,2.30,Sauces,true,false,true,,沙嗲酱
+Soy Sauce,50ml,2.30,Sauces,true,false,false,,酱油
 Lamb Thai Red Curry, ,8.40,Thai Curry Dishes,false,true,false,,泰式红咖喱羊肉
 Lamb Thai Green Curry, ,8.40,Thai Curry Dishes,false,true,false,,泰式青咖喱羊肉
 King Prawn Thai Red Curry, ,7.80,Thai Curry Dishes,false,true,false,,泰式红咖喱大虾
